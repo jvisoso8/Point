@@ -8,7 +8,7 @@ module.exports = {
     pathPrefix: `/`,
     siteMetadata: {
         title: "Point Technologies",
-        titleTemplate: `Digital Agency `,
+        titleTemplate: `Point.`,
         description: `We know tech, let us be your strategic partner and place you at the vanguard of the digital transformation. Maximize your efficiency through our technological tools and innovative strategies..`,
         author: `Jose Visoso`,
         twitterUsername: ``,

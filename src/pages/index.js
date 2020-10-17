@@ -11,7 +11,7 @@ import BlogSection from '../containers/home-particle/blog'
 
 export default () => (
     <Layout>
-        <SEO title="Home - Particle"/>
+        <SEO title="Home"/>
         <Hero/>
         <Story/>
         <ClientSection/>
