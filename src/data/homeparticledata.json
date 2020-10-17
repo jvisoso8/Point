@@ -7,7 +7,7 @@
 
         "date": "",
         "bg_image": "./images/particle-banner.jpg",
-        "btn_link": "/index-particle",
+        "btn_link": "/contact",
         "clients": [
             {
                 "id": "particle_client_1",

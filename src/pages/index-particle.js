@@ -14,8 +14,7 @@ export default () => (
         <SEO title="Home - Particle"/>
         <Hero/>
         <Story/>
-        <ClientSection/>git
-        <BlogSection/>
+        <ClientSection/>
     </Layout>
 )
  

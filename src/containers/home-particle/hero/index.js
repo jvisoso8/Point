@@ -18,6 +18,7 @@ import {
     ClientWrap,
     ClientItem
 } from './hero.style';
+import {FooterMenuList} from "../../layout/footer/footer-menu/footer-menu.stc";
 
 const Hero = (props) => {
     const heroQueryData = useStaticQuery(graphql`
@@ -82,7 +83,8 @@ const Hero = (props) => {
                     <div className="col-6 offset-1">
                         {date && <Text {...descStyle}>{date}5</Text>}
                         {title && <Heading {...headingStyle}> {title} <br/>{title1} {title2} </Heading>}
-                        {btn_link && <Button fontSize="20px" as={Link} to={btn_link} layout={2}>Discover More <i
+                        {btn_link &&
+                        <Button fontSize="20px" as={Link} to={btn_link} layout={2}>Discover More <i
                             className="ti-arrow-right"></i> </Button>}
                     </div>
                 </ContetnTop>
