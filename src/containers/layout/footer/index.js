@@ -81,16 +81,17 @@ const Footer = ({
 						{postal_code && (
 							<Address>
 								<Text {...addresTextStyle}> 
-									<Text {...addresSpanStyle}>Postal Address:</Text> 
-									{parse(postal_code)}
+									<Text {...addresSpanStyle}></Text>
+									{parse(address)}
+
 								</Text>
 							</Address>
 						)}
 						{address && (
 							<Address>
 								<Text {...addresTextStyle}> 
-									<Text {...addresSpanStyle}>ENVAto hq</Text> 
-									{parse(address)}
+									<Text {...addresSpanStyle}></Text>
+									{parse(postal_code)}
 								</Text>
 							</Address>
 						)}

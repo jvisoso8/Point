@@ -25,18 +25,19 @@ const About = ({HeadingStyle, TextStyle, ProjectTypeHeading, ProjectTypeText}) =
     const delay = [200];
     return (
         <AboutSectionWrap>
-            <div className="row">
+            <div className="">
                 {(title || desc) && (
-                    <div className="col-1 offset-1">
+                    <div className="col-4 offset-1">
                         <SectionTitle>
                             {title && <Heading {...HeadingStyle}>{title}</Heading>}
-                            {desc && <Text {...TextStyle}>{desc}</Text>}                        
+
                         </SectionTitle>
                     </div>
                 )}
                 {content && (
-                    <div className="col-2 offset-1">
+                    <div className="col-4 offset-1">
                         <AboutContent>
+                            <br/>
                             <Text>{content}</Text>
                         </AboutContent>
                     </div>

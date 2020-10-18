@@ -90,9 +90,7 @@ const OverlaySection = ({
                     </OveralyLogo>
                     <OverlayMap className="ovl-map rn_surface">
                         <MapBG fluid={mapImg}/>
-                        <div className="anchor-wrap">
-                            <a href="/"><span>Direction</span></a>
-                        </div>
+
                     </OverlayMap>
                 </OverlayLeftTop>
                 <OverlayLeftBottom>
@@ -116,20 +114,16 @@ const OverlaySection = ({
                                     onMouseEnter={onHoverHandler} 
                                     path={linkedin}>Linkedin</SocialLink>
                             )}
-                            {dribbble && (
-                                <SocialLink 
-                                    data-bgcolor="#ea4c89" 
-                                    onMouseEnter={onHoverHandler} 
-                                    path={dribbble}>Dribbble</SocialLink>
-                            )}
+
                         </Social>
                     </OverlaySocial>
                     {postal_code && (
                         <OverlayQuickInfo className="ovl-quick-info rn_surface">
                             <Heading {...quicInfoHeading}>Quick Information.</Heading>
                             <Text {...quickInfoText}>
-                                <Text {...quickInfoSpan}>Postal Address:</Text>
-                                {parse(postal_code)}
+                                <Text {...quickInfoSpan}></Text>
+                                Minerva 72, colonia crédito constructor <br/>
+                                03940, Benito Juárez CDMX
                             </Text>
                         </OverlayQuickInfo>
                     )}

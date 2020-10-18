@@ -10,9 +10,10 @@ export const MapContainer = (props) => {
       google={props.google} 
       zoom={14}
       initialCenter={{
-          lat: 23.7808875,
-          lng: 90.2792371
+          lat: 19.3650317,
+          lng: -99.1798037
       }}
+
     >
 
       <Marker onClick={onMarkerClick}
@@ -22,5 +23,5 @@ export const MapContainer = (props) => {
 }
  
 export default GoogleApiWrapper({
-  apiKey: ('AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo')
+  apiKey: ('AIzaSyBrN1lneWvaBqK4d8ZCqV6vPBT-NM0MDNA')
 })(MapContainer)

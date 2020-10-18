@@ -9,20 +9,20 @@ module.exports = {
     siteMetadata: {
         title: "Point Technologies",
         titleTemplate: `Point.`,
-        description: `We know tech, let us be your strategic partner and place you at the vanguard of the digital transformation. Maximize your efficiency through our technological tools and innovative strategies..`,
+        description: `We know tech, let us be your strategic partner and place you at the vanguard of the digital transformation. Maximize your efficiency through our technological tools and innovative strategies.`,
         author: `Jose Visoso`,
         twitterUsername: ``,
         image: 'bg-image-1.jpg',
-        siteUrl: 'http://thern.rainbowit.net/',
-        form_url: "https://getform.io/f/7a6695a7-c8e3-442c-bc2f-d46d3b9a535e",
+        siteUrl: 'https://pointech.dev',
+        form_url: "https://getform.io/f/43acdb57-c0c2-4a72-ae3f-50fbeb248971",
         contact: {
-            postal_code: 'PO Box 16122 Collins Street <br/> West Victoria 8007 Australia.',
-            address: '121 King Street, Melbourne Victoria 3000 Australia.',
+            postal_code: 'Sydney, Australia <br/> Mexico City, Mexico',
+            address: ' Minerva 72, colonia crédito constructor 03940, Benito Juárez CDMX',
             email: 'Jvisoso8@hotmail.com',
             company_email: 'example@yourcompany.com',
-            company_address: '4415 Poco Mas Drive, Dallas United States.',
-            phone: '+012 33 445566',
-            phone2: '+013 55 454565',
+            company_address: ' Minerva 72, colonia crédito constructor 03940, Benito Juárez CDMX',
+            phone: '+52 1 55 7845 7977',
+            phone2: '+52 1 55 4454 5417',
             social: {
                 facebook: 'https://facebook.com',
                 twitter: 'https://twitter.com',
@@ -95,8 +95,8 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-robots-txt',
             options: {
-                host: 'http://thern.rainbowit.net/',
-                sitemap: 'http://thern.rainbowit.net/sitemap.xml',
+                host: 'https://pointech.dev',
+                sitemap: 'https://pointech.dev/sitemap.xml',
                 policy: [{userAgent: '*', allow: '/'}]
             }
         },
