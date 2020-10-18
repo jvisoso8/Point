@@ -7,42 +7,44 @@
         "featured_work": [
             {
                 "id": "awwards_work",
-                "title": "AWWWARDS",
+                "title": "External",
                 "achivments": [
-                    "Winnings 2017-2019",
-                    "Nominees 2016-2017"
+                    "Digital Marketing",
+                    "Web development",
+                    "Branding",
+                    "Data Analytics",
+                    "E-Commerce",
+                    "App Development"
                 ]
             },
             {
                 "id": "csswinner_work",
-                "title": "CSSWINNER",
+                "title": "Internal",
                 "achivments": [
-                    "SOTD - CreativeAgency",
-                    "SOTD - TheRNCreative"
+                    "Process Optimisation",
+                    "Process Automation",
+                    "Software Development",
+                    "Data Analysis",
+                    "Data Centralisation",
+                    "IOT",
+                    "SaaS"
+
                 ]
             },
             {
                 "id": "themeforest_work",
-                "title": "FEATURES ON ThemeForest",
+                "title": "Consulting",
                 "achivments": [
-                    "Author 2017-2019",
-                    "Item 2016-2017"
-                ]
-            },
-            {
-                "id": "design_awards_work",
-                "title": "CSS Design Awards",
-                "achivments": [
-                    "Winnings 2015-2016",
-                    "Nominees 2016-2017"
+                    "Technological Audit",
+                    "Technological Advisory"
                 ]
             }
         ]
     },
     {
         "id": "about-team-section-content",
-        "title": "Our Team",
-        "subtitle": "Our Partners"
+        "title": "Team",
+        "subtitle": "Specialised"
     },
     {
         "id": "about-join-team-content",

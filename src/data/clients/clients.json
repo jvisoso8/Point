@@ -6,18 +6,18 @@
     },
     {
         "id": "client_2",
-        "link": "/",
+        "link": "https://uncoverindex.com",
         "image": "./images/brand-2.png"
     },
     {
         "id": "client_3",
-        "link": "/",
+        "link": "https://noicetech.com.au",
         "image": "./images/brand-3.png"
     },
     {
         "id": "client_4",
-        "link": "/",
-        "image": "./images/brand-4.png"
+        "link": "https://joy-city-291022.an.r.appspot.com",
+        "image": "./images/brand-4.jpg"
     },
     {
         "id": "client_5",

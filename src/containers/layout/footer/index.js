@@ -67,13 +67,13 @@ const Footer = ({
 			<FooterTop>
 				<Logo {...logoStyle}/>
 				<div className="ft-menu">
-					<FooterMenu/>
+					{/* <FooterMenu/> */}
 				</div>
 			</FooterTop>
 			<FooterMiddle>
 				<FooterMiddleLeft>
 					<Heading {...headingStyle}>Let’s talk!</Heading>
-					{email && <Text {...emailTextStyle}><Link {...emailLinkStyle}>{email}</Link></Text>}
+					{email && <Text {...emailTextStyle}><Link to="/contact" {...emailLinkStyle}>{email}</Link></Text>}
 				</FooterMiddleLeft>
 				<FooterMiddleRight>
 					<Heading {...widgetTitleStyle}>Quick Information.</Heading>
@@ -113,7 +113,6 @@ const Footer = ({
 						{facebook && <SocialLink path={facebook}>Facebook</SocialLink>}
 						{twitter && <SocialLink path={twitter}>Twiiter</SocialLink>}
 						{linkedin && <SocialLink path={linkedin}>Linkedin</SocialLink>}
-						{dribbble && <SocialLink path={dribbble}>Dribbble </SocialLink>}
 					</Social>
 				</FooterBottomRight>
 			</FooterBottom>
