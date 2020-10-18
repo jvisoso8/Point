@@ -1,15 +1,15 @@
 [
     {
-        "id": "alison-m-major",
+        "id": "jvisoso",
         "image": "./images/1.jpg",
-        "name": "Alison M. Major",
+        "name": "Jose Visoso",
         "designation": "Co-Founder/COO",
         "role": "administrator"
     },
     {
-        "id": "juanita-g-sicard",
+        "id": "ablanco",
         "image": "./images/2.jpg",
-        "name": "Juanita G. Sicard",
+        "name": "Arturo Blanco",
         "designation": "Co-Founder/CEO",
         "role": "administrator"
     },

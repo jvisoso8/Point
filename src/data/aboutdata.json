@@ -1,9 +1,9 @@
 [
     {
         "id": "about-intro-content",
-        "title": "about us",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",
+        "title": "When you work with Point. you get the expertise of a holistic team that’s thinking effectively and long term to devise solutions that are appropriate for your business, technology, and budget needs.",
+        "desc": "About us",
+        "content": "We lead in the transformation of businesses by bringing together the different capabilities needed to help organizations grow and thrive in the digital age. We help our clients harness the power of data and artificial intelligence, modernize core technology and capitalize on new technology, optimize and automate operations, fuel digital growth, create stunning digital experiences, and build digital talent and culture. We offer solutions that are necessary to thrive in todays world. We have a team of people with different backgrounds and experiences, this allows us to see a problem in different ways and come up with different solutions. In a fast changing business environment, such as the one we face today, our integral strategies leave your company better positioned to adapt and overcome anything.",
         "featured_work": [
             {
                 "id": "awwards_work",
@@ -41,8 +41,8 @@
     },
     {
         "id": "about-team-section-content",
-        "title": "Our Awesome Teams",
-        "subtitle": "SAMPLE THE GOODS"
+        "title": "Our Team",
+        "subtitle": "Our Partners"
     },
     {
         "id": "about-join-team-content",

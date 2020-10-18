@@ -13,7 +13,5 @@ export default () => (
         <Banner/>
         <About/>
         <Team/>
-        <JoinOurTeam/>
-        <Testimonial/>
     </Layout>
 )
