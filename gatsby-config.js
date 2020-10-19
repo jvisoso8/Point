@@ -18,8 +18,8 @@ module.exports = {
         contact: {
             postal_code: 'Sydney, Australia <br/> Mexico City, Mexico',
             address: ' Minerva 72, colonia crédito constructor 03940, Benito Juárez CDMX',
-            email: 'Jvisoso8@hotmail.com',
-            company_email: 'example@yourcompany.com',
+            email: 'contacto@pointech.dev',
+            company_email: 'contacto@pointech.dev',
             company_address: ' Minerva 72, colonia crédito constructor 03940, Benito Juárez CDMX',
             phone: '+52 1 55 7845 7977',
             phone2: '+52 1 55 4454 5417',
