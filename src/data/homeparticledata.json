@@ -12,18 +12,19 @@
             {
                 "id": "particle_client_1",
                 "link": "/",
-                "image": "./images/brand-7.png"
-            },
-            {
-                "id": "particle_client_2",
-                "link": "/",
-                "image": "./images/brand-6.png"
+                "image": "./images/brand-1.png"
             },
             {
                 "id": "particle_client_3",
                 "link": "/",
                 "image": "./images/brand-4.png"
+            },
+            {
+                "id": "particle_client_2",
+                "link": "/",
+                "image": "./images/brand-2.png"
             }
+
         ]
     }, 
     {
