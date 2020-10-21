@@ -13,6 +13,7 @@ export const LogoWrapper = styled.div `
         top: 0;
         opacity: 0;
         visibility: hidden;
+         max-height: 47px;
     }
     ${props => props.layout === 'darkHeader' && css `
         .white-logo{
