@@ -114,7 +114,7 @@ module.exports = {
                 // Setting this parameter is optional
                 anonymize: false,
                 // Setting this parameter is also optional
-                respectDNT: fale,
+                respectDNT: false,
                 // Avoids sending pageview hits from custom paths
                 exclude: ["/preview/**"],
                 // Delays sending pageview hits on route update (in milliseconds)
