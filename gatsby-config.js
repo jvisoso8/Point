@@ -112,9 +112,9 @@ module.exports = {
                 // Defines where to place the tracking script - `true` in the head and `false` in the body
                 head: true,
                 // Setting this parameter is optional
-                anonymize: true,
+                anonymize: false,
                 // Setting this parameter is also optional
-                respectDNT: true,
+                respectDNT: fale,
                 // Avoids sending pageview hits from custom paths
                 exclude: ["/preview/**"],
                 // Delays sending pageview hits on route update (in milliseconds)
