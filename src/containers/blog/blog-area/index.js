@@ -21,6 +21,8 @@ const BlogArea = () => {
                       id
                       author
                       shortDesc
+                      url
+                      order
                       image {
                         childImageSharp {
                           fluid(maxWidth: 600, maxHeight: 630, quality: 100) {
@@ -41,6 +43,7 @@ const BlogArea = () => {
     const {totalCount} = blogQueryData.allMarkdownRemark;
     const postsPerPage = 4;
     const numberOfPages = Math.ceil(totalCount/postsPerPage);
+
     return (
       <Fragment>
         <SectionWrap>
@@ -48,14 +51,14 @@ const BlogArea = () => {
             <BlogInner>
                 <div className="col-4 offset-1">
                     <div className="row">
-                        {blogs.map((blog, i) => (
+                        {blogs.sort((a,b)=>a.node.frontmatter.order-b.node.frontmatter.order).map((blog, i) => (
                             <div className="col-2 blog-wrap" key={`blog-${i}`}>
                                 <Blog
                                     title={blog.node.frontmatter.title}
                                     date={blog.node.frontmatter.date}
                                     author={blog.node.frontmatter.author}
                                     id={blog.node.frontmatter.id}
-                                    path={blog.node.fields.slug}
+                                    path={blog.node.frontmatter.url}
                                     excerpt={blog.node.frontmatter.shortDesc}
                                     image={blog.node.frontmatter.image.childImageSharp.fluid}
                                 />
@@ -65,10 +68,14 @@ const BlogArea = () => {
                 </div>
             </BlogInner>
         </SectionWrap>
-        <Pagination
+          {/*
+           <Pagination
             currentPage={1}
             numberOfPages={numberOfPages}
         />
+          */}
+
+
       </Fragment>
     )
 }

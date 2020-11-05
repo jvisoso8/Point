@@ -21,9 +21,9 @@ function BlogTemplate({data, ...restProps}) {
     const {titleStyle, metaBoxStyle, metaHeadingStyle, metaTextStyle} = restProps;
     const post = data.markdownRemark.frontmatter;
     const imageData = post.image.childImageSharp.fluid;
-    const disqusShortname = 'thern-1';
+    const disqusShortname = 'pointech';
     const disqusConfig = {
-        url: post.path,
+        url: "pointech.disqus.com",
         identifier: post.id,
         title: post.title,
     }; 
@@ -48,12 +48,6 @@ function BlogTemplate({data, ...restProps}) {
                                     <Text {...metaTextStyle}>Author:</Text>
                                     <Heading {...metaHeadingStyle}>{post.author}</Heading>
                                 </BlogDetailsMeta>
-                                <BlogDetailsMeta {...metaBoxStyle}>
-                                    <Text {...metaTextStyle}>Comments:</Text>
-                                    <Heading {...metaHeadingStyle}>
-                                        <CommentCount shortname={disqusShortname} config={disqusConfig}/>
-                                    </Heading>
-                                </BlogDetailsMeta>
                             </BlogDetailsMetaWrap>
                         </div>
                     </div>
@@ -61,11 +55,13 @@ function BlogTemplate({data, ...restProps}) {
                 <BlogDetailsContent>
                     <div dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}/>
                 </BlogDetailsContent>
+
                 <CommentWrap>
                     <CommentFormWrap>
                         <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
                     </CommentFormWrap>
                 </CommentWrap>
+
             </BlogDetailsWrap>
         </Layout>
     )

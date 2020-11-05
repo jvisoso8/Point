@@ -68,7 +68,10 @@ export const BlogDetailsContent = styled.div `
     }
     @media ${device.small}{
         padding-top: 10vw;
-    }    
+    }
+    p{
+        font-size: 1.5em;
+        }    
     .container{
         width: 100%;
         padding-right: 15px;

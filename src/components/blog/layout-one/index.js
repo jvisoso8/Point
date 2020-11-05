@@ -17,9 +17,9 @@ import {
 } from './blog.stc'
 
 const Blog = ({title, date, id, author, path, image, excerpt}) => {
-    const disqusShortname = 'thern-1';
+    const disqusShortname = 'Point';
     const disqusConfig = {
-        url: path,
+        url: `pointech.disqus.com`,
         identifier: id,
         title: title,
     }; 
@@ -28,25 +28,25 @@ const Blog = ({title, date, id, author, path, image, excerpt}) => {
         <BlogWrapper>
             {image && (
                 <Thumb>
-                    <Link to={path}>
+                    <Link to={`${path}`}>
                         <Image fluid={image} alt={title}/>
                     </Link>
                     <Category>
-                        <Link to={path}>Creative</Link>
+                        <Link to={`${path}` }>Point</Link>
                     </Category>
                 </Thumb>
             )}
             <Content>
                 <ContentTop>
                     <PostDate>{date}</PostDate>
-                    <PostTitle><Link to={path}>{truncateString(title, 30)}</Link></PostTitle>
+                    <PostTitle><Link to={`${path}`}>{truncateString(title, 30)}</Link></PostTitle>
                     <Excerpt>{excerpt}</Excerpt>
                 </ContentTop>
                 <ContentBottom>
                     <PostMeta>
                         <li><i className="ti-user"></i> <Link to={path}>{author}</Link></li>
                         <li>
-                            <Link to={path}>
+                            <Link to={`${path}`}>
                                 <i className="ti-comment"></i>
                                 <CommentCount shortname={disqusShortname} config={disqusConfig}/>
                             </Link>
