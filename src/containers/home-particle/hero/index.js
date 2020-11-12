@@ -59,7 +59,7 @@ const Hero = (props) => {
   `);
     const heroData = heroQueryData.homeparticledataJson;
     const imageData = heroData.bg_image.childImageSharp.fluid;
-    const {title,title1,title2,titleEsp,title1Esp,title2Esp, date, btn_link, clients} = heroData;
+    const {title, title1, title2, titleEsp, title1Esp, title2Esp, date, btn_link, clients} = heroData;
     const particleOpt = {
         "particles": {
             "number": {
@@ -79,7 +79,7 @@ const Hero = (props) => {
         }
     }
     const {descStyle, headingStyle} = props
-    if(props.lang==="eng"){
+    if (props.lang === "eng") {
         console.log("eng")
         return (
             <HeroArea>
@@ -117,15 +117,19 @@ const Hero = (props) => {
                                     )}
                                 </ContentBottomRight>
                                 <br/>
-                                {/*
-                                <Button style={{color:"#fff"}} fontSize="20px"  layout={1} onClick={()=> {
+
+                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
                                     console.log("click")
                                     props.setLang("esp")
-                                }} >español</Button>
-                                <Button style={{color:"#fff"}} fontSize="20px"  layout={1} onClick={()=> {
+                                }}>español</Button>
+                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
                                     console.log("click")
                                     props.setLang("eng")
-                                }} >English</Button>*/}
+                                }}>English</Button>
+                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
+                                    console.log("click")
+                                    props.setLang("fra")
+                                }}>Français</Button>
 
                             </ContentBottomInner>
                         </div>
@@ -134,8 +138,7 @@ const Hero = (props) => {
             </HeroArea>
         )
 
-    }
-    else if(props.lang === "esp"){
+    } else if (props.lang === "esp") {
         console.log("esp")
         return (
             <HeroArea>
@@ -146,9 +149,10 @@ const Hero = (props) => {
 
                         <div className="col-6 offset-1">
                             {date && <Text {...descStyle}>{date}</Text>}
-                            {title && <Heading {...headingStyle}> {titleEsp} <br/>{title1Esp} {title2Esp} </Heading>}
+                            {title &&
+                            <Heading {...headingStyle}> {titleEsp} <br/>{title1Esp} <br/> {title2Esp} </Heading>}
                             {btn_link &&
-                            <Button fontSize="20px" as={Link} to={btn_link} layout={2}>Discover More <i
+                            <Button fontSize="20px" as={Link} to={btn_link} layout={2}>Descubre más <i
                                 className="ti-arrow-right"></i> </Button>}
 
                         </div>
@@ -157,7 +161,7 @@ const Hero = (props) => {
                         <div className="col-4 offset-1">
                             <ContentBottomInner>
                                 <ContentBottomLeft>
-                                    <Text {...descStyle} mb="0">WE'VE BUILT SOLUTIONS FOR...</Text>
+                                    <Text {...descStyle} mb="0">HEMOS CREADO SOLUCIONES PARA ...</Text>
                                 </ContentBottomLeft>
                                 <ContentBottomRight>
                                     {clients && (
@@ -173,14 +177,78 @@ const Hero = (props) => {
                                     )}
                                 </ContentBottomRight>
                                 <br/>
-                                <Button style={{color:"#fff"}} fontSize="20px"  layout={1} onClick={()=> {
+                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
                                     console.log("click")
                                     props.setLang("esp")
-                                }} >español</Button>
-                                <Button style={{color:"#fff"}} fontSize="20px"  layout={1} onClick={()=> {
+                                }}>español</Button>
+                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
                                     console.log("click")
                                     props.setLang("eng")
-                                }} >English</Button>
+                                }}>English</Button>
+                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
+                                    console.log("click")
+                                    props.setLang("fra")
+                                }}>Français</Button>
+                            </ContentBottomInner>
+                        </div>
+                    </ContentBottom>
+                </ContentWrapper>
+            </HeroArea>
+        )
+    } else if (props.lang === "fra") {
+        console.log("fra")
+        return (
+            <HeroArea>
+                <HeroBg fluid={imageData}/>
+                <Particles className="particle" params={particleOpt}/>
+                <ContentWrapper>
+                    <ContetnTop>
+
+                        <div className="col-6 offset-1">
+                            {date && <Text {...descStyle}>{date}</Text>}
+                            {title &&
+                            <Heading {...headingStyle}> Nous connaissons la technologie, <br/>laissez-nous être
+                                votre allié stratégique et vous mettre à l’avant-garde de la transformation digitale.
+                                Faites croître votre efficacité grâce à nos outils technologiques et
+                                nos stratégies innovatrices </Heading>}
+                            {btn_link &&
+                            <Button fontSize="20px" as={Link} to={btn_link} layout={2}>Découvrir plus <i
+                                className="ti-arrow-right"></i> </Button>}
+
+                        </div>
+                    </ContetnTop>
+                    <ContentBottom>
+                        <div className="col-4 offset-1">
+                            <ContentBottomInner>
+                                <ContentBottomLeft>
+                                    <Text {...descStyle} mb="0">NOUS AVONS CONSTRUIT DES SOLUTIONS POUR...</Text>
+                                </ContentBottomLeft>
+                                <ContentBottomRight>
+                                    {clients && (
+                                        <ClientWrap>
+                                            {clients.map(client => (
+                                                <ClientItem key={client.id}>
+                                                    <Anchor path={client.link}>
+                                                        <img src={client.image.childImageSharp.fluid.src} alt="client"/>
+                                                    </Anchor>
+                                                </ClientItem>
+                                            ))}
+                                        </ClientWrap>
+                                    )}
+                                </ContentBottomRight>
+                                <br/>
+                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
+                                    console.log("click")
+                                    props.setLang("esp")
+                                }}>español</Button>
+                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
+                                    console.log("click")
+                                    props.setLang("eng")
+                                }}>English</Button>
+                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
+                                    console.log("click")
+                                    props.setLang("fra")
+                                }}>Français</Button>
                             </ContentBottomInner>
                         </div>
                     </ContentBottom>
@@ -188,7 +256,6 @@ const Hero = (props) => {
             </HeroArea>
         )
     }
-
 
 
 }
