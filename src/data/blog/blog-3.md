@@ -1,6 +1,6 @@
 ---
 title: 'Uso de data para optimizar ventas'
-date: 2020-01-15 02:00:00
+date: 2020-11-12 02:00:00
 author: 'Jose'
 id: 'blog-3'
 image: './images/blog-3/blog-3.jpg'

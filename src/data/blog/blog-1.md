@@ -1,6 +1,6 @@
 ---
 title: 'Elige Bien Tus Redes Sociales Para Tu Marketing Digital.'
-date: 2020-01-14 05:00:00
+date: 2020-10-01 05:00:00
 author: 'Arturo'
 id: 'blog-1'
 image: './images/blog-1/blog-1.jpg'

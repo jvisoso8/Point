@@ -28,7 +28,7 @@ const BlogList = (props) => {
                                         date={blog.node.frontmatter.date}
                                         author={blog.node.frontmatter.author}
                                         id={blog.node.frontmatter.id}
-                                        path={blog.node.fields.slug}
+                                        path={blog.node.frontmatter.url}
                                         excerpt={blog.node.frontmatter.shortDesc}
                                         image={blog.node.frontmatter.image.childImageSharp.fluid}
                                     />

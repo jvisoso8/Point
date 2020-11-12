@@ -1,6 +1,6 @@
 ---
 title: 'El ingrediente secreto para una transformación digital exitosa'
-date: 2020-01-14 05:00:00
+date: 2020-11-01 05:00:00
 author: 'Arturo'
 id: 'blog-2'
 image: './images/blog-2/blog-2.jpg'
