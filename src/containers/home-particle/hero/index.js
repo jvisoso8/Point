@@ -117,6 +117,7 @@ const Hero = (props) => {
                                     )}
                                 </ContentBottomRight>
                                 <br/>
+                                <br/>
 
                                 <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
                                     console.log("click")
