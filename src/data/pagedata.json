@@ -5,7 +5,7 @@
     },
     {
         "id": "project_page_data",
-        "banner_img": "./images/bg-image-3.jpg"
+        "banner_img": "./images/single-project-banner1.jpg"
     },
     {
         "id": "contact_page_data",
@@ -21,6 +21,6 @@
     },
     {
         "id": "single_project_page_data",
-        "banner_img": "./images/single-project-banner.jpg"
+        "banner_img": "./images/single-project-banner1.jpg"
     }
 ]

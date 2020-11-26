@@ -20,6 +20,7 @@ const ProjectSection = ({section, project}) => {
             title
             sector
             client
+            is_hidden
             featured_image {
               childImageSharp {
                 fluid(maxWidth: 1060, maxHeight: 600, quality: 100) {
@@ -49,18 +50,22 @@ const ProjectSection = ({section, project}) => {
                 <div className="project-wrapper">
                     {projectsData.map((data, i) => {
                         let isEven = i%2 === 0;
-                        return(
-                            <Project 
-                                {...project}
-                                isEven={isEven}
-                                key={data.node.id} 
-                                id={data.node.id} 
-                                image={data.node.featured_image.childImageSharp}
-                                title={data.node.title}
-                                client={data.node.client}
-                                sector={data.node.sector}
-                            />
-                        )
+                        console.log(data.node.is_hidden,data.node.title)
+                        if(!data.node.is_hidden){
+                            return(
+                                <Project
+                                    {...project}
+                                    isEven={isEven}
+                                    key={data.node.id}
+                                    id={data.node.id}
+                                    image={data.node.featured_image.childImageSharp}
+                                    title={data.node.title}
+                                    client={data.node.client}
+                                    sector={data.node.sector}
+                                />
+                            )
+                        }
+
                     })}
                 </div>
             </div>

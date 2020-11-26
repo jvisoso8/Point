@@ -9,5 +9,6 @@ export default () => (
         <SEO title="Contact Us"/>
         <ContactFormSection/>
         <ContactInfoSection/>
+
     </Layout>
 )

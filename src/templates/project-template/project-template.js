@@ -22,7 +22,7 @@ import {
 const ProjectTemplate = ({data, pageContext: {next, previous}, ...restProps}) => {
     const {title, metaHeading, metaText, nextProjectStyle} = restProps;
     const projectData = data.projectsJson;
-    const {body, features, cover_image} = projectData;
+    const { body, features, cover_image} = projectData;
     return (
         <Layout>
             <SEO title={projectData.title}/>
@@ -103,41 +103,7 @@ const ProjectTemplate = ({data, pageContext: {next, previous}, ...restProps}) =>
                     </div>
                 ))}
             </ProjectDetailsWrap>
-            <NextProjectWrap>
-                <div className="project-container">
-                    <div className="col-1 offset-1">
-                        <SectionTitle
-                            title={next ? "Next Project": "Previous Project"}
-                            subtitle="Sample the Goods"
-                        />
-                    </div>
 
-                    <div className="project-wrapper">
-                        {next && (
-                            <Project 
-                                {...nextProjectStyle}
-                                isEven={true}
-                                id={next.id} 
-                                image={next.featured_image.childImageSharp.fluid}
-                                title={next.title}
-                                client={next.client}
-                                sector={next.sector}
-                            />
-                        )} 
-                        {!next && previous && (
-                            <Project 
-                                {...nextProjectStyle}
-                                isEven={true}
-                                id={previous.id} 
-                                image={previous.featured_image.childImageSharp.fluid}
-                                title={previous.title}
-                                client={previous.client}
-                                sector={previous.sector}
-                            />
-                        )}
-                    </div>
-                </div>
-            </NextProjectWrap>
         </Layout> 
     )
 }
@@ -151,7 +117,7 @@ export const query = graphql `
             sector
             year
             body
-            cover_image {
+            featured_image {
               childImageSharp {
                 fluid(maxWidth: 1760, maxHeight: 990, quality: 100) {
                   ...GatsbyImageSharpFluid_withWebp

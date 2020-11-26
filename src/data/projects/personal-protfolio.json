@@ -4,6 +4,7 @@
     "client": "Steve Tevor",
     "sector": "commercial",
     "year": "2010 - 2016",
+    "is_hidden": true,
     "featured_image": "./images/personal-portfolio/featured_image.jpg",
     "is_featured": true,
     "body": [

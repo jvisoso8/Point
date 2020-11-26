@@ -18,6 +18,10 @@
         "title": "Blog",
         "path": "/blog"
     },
+    {
+        "title": "Our Work",
+        "path": "/project"
+    },
 
     {
         "title": "contact",

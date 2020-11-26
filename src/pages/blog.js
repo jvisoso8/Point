@@ -5,7 +5,7 @@ import Blog from '../containers/blog/blog-area'
 
 export default () => (
     <Layout headerStyle={"black-logo"}>
-        <Banner/>
+        <Banner />
         <Blog/>
     </Layout>
 )

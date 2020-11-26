@@ -4,6 +4,7 @@
     "client": "Devid Keln",
     "sector": "commercial",
     "year": "2019 - 2019",
+    "is_hidden": true,
     "featured_image": "./images/smart-business/featured_image.jpg",
     "cover_image":"./images/smart-business/2.jpg",
     "is_featured": true,
@@ -15,7 +16,7 @@
     "features": [
         {
             "id": "smart-feature-1",
-            "title": "Retina Device",
+            "title": "Retina   Device",
             "image": "./images/smart-business/3.jpg",
             "text": [
                 "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",

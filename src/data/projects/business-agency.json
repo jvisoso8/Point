@@ -4,6 +4,7 @@
     "client": "Jonas Khandawald",
     "sector": "commercial",
     "year": "2009 - 2019",
+    "is_hidden": true,
     "featured_image": "./images/business-agency/featured_image.jpg",
     "is_featured": true,
     "body": [

@@ -1,0 +1,34 @@
+{
+    "id": "joy-city",
+    "title": "Joy City",
+    "client": "Joy City",
+    "sector": "Consultoria",
+    "year": "2020",
+    "is_hidden": false,
+    "featured_image": "./images/Joy-City/featured_image.png",
+    "is_featured": true,
+
+    "body": [
+        "Joy City es un centro comercial localizado en Lian Yun Gang, China. A pesar de su ubicación en el centro de la ciudad y asociación con marcas de alta gama, tenían un problema - el flujo de gente en el centro comercial era bajo y la gente permanecía poco tiempo durante sus visitas.",
+        "Joy City nos contactó en búsqueda de una solución a este problema, no pudiendo identificar la causa de estos obstáculos.",
+        "Después de una auditoría, el equipo de Point identificó la posible raíz del problema - el diseño arquitectónico del centro comercial limitaba la visibilidad de las tiendas y negocios disponibles, lo cual estaba dañando el tráfico de gente al no poder vivir la experiencia que Joy City ofrecía de manera plena.",
+        "Sabiendo que rediseñar el centro comercial no era una solución viable debido a la inversión sustancial que un proyecto así requeriría, optamos por atacar este problema de una manera mucho más sencilla."
+
+         ],
+    "features": [
+
+        {
+            "id": "business-feature-2",
+            "title": "Resultado.",
+            "image": "./images/Joy-City/featured_image.png",
+            "text": [
+                "Nuestro objetivo era simple - encontrar una manera fácil, económica y escalable de educar a la gente de Lian Yun Gang sobre todo lo que Joy City tenía que ofrecer.",
+                "Nuestra solución - crear una página web que permitiera a cualquier persona, con sólo un par de ‘clicks’, visualizar todas las tiendas, restaurantes y negocios disponibles en Joy City, al igual que sus eventos, ofertas residenciales y de más.",
+                "Poco después del lanzamiento de la página web, Joy City vió los números de visitantes, al igual que la duración de las visitas y el gasto promedio, incrementar significativamente. Esto impulsó a todos los negocios dentro del centro comercial, creando más largas y exitosas relaciones entre Joy City y sus inquilinos comerciales.",
+                "",
+                "En Point, nos enorgullece poder encontrar soluciones sencillas y económicas para grandes problemas como los que enfrentaba Joy City. Sabemos que el poder de la tecnología es capaz de superar cualquier obstáculo.",
+                "Para resolver cualquier problema o atacar el tipo de oportunidades que pueden llevar a tu empresa al siguiente nivel, ¡contáctanos!"
+            ]
+        }
+    ]
+}
