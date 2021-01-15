@@ -82,11 +82,10 @@ module.exports = {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
                 fonts: [
-                    {
-                        family: `Poppins`,
-                        subsets: [`latin`],
-                        variants: [`300`, `300i`, `400`, `400i`, `500`, `600`, `700`, `900`]
-                    }
+
+                        `Poppins\:300,300i,400,400i,500,600,700,900`,
+
+
                 ],
             },
         },
