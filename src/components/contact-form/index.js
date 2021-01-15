@@ -46,7 +46,7 @@ const ContactForm = ({ inputStyle, textareaStyle, url }) => {
             data
         })
             .then(res => {
-                handleServerResponse(true, "Thanks! We will get in touch as soon as possible.", form);
+                handleServerResponse(true, "Gracias!Estaremos en contacto lo antes posible.", form);
             })
             .catch(err => {
                 handleServerResponse(false, err.response.data.error, form);
@@ -65,10 +65,10 @@ const ContactForm = ({ inputStyle, textareaStyle, url }) => {
                             type="text"
                             name="name"
                             id="name"
-                            placeholder="Your Name"
+                            placeholder="Nombre"
                             onChange={onChangeHandler}
                             ref={register({
-                                required: 'Name Required',
+                                required: 'Name Reuqerido',
                             })}
                             {...inputStyle}
                         />
@@ -79,13 +79,13 @@ const ContactForm = ({ inputStyle, textareaStyle, url }) => {
                             type="email"
                             name="email"
                             id="email"
-                            placeholder="Your Email"
+                            placeholder="Email"
                             onChange={onChangeHandler}
                             ref={register({
-                                required: 'Email Required',
+                                required: 'Email Reuqerido',
                                 pattern: {
                                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                                    message: "invalid email address"
+                                    message: "Email invalido."
                                 }
                             })}
                         />
@@ -96,10 +96,10 @@ const ContactForm = ({ inputStyle, textareaStyle, url }) => {
                     <FormGroup {...textareaStyle}>
                         <Textarea
                             name="message"
-                            placeholder="Messages"
+                            placeholder="Mensaje"
                             onChange={onChangeHandler}
                             ref={register({
-                                required: 'Message Required',
+                                required: 'Mensaje Reuqerido.',
                                 minLength: { value: 10, message: "Minimum length is 10" }
                             })}
                         />
@@ -108,7 +108,7 @@ const ContactForm = ({ inputStyle, textareaStyle, url }) => {
                 </div>
                 <div className="form-row">
                     <FormGroup>
-                        <Button type="submit" disabled={serverState.submitting}>Send Now</Button>
+                        <Button type="submit" disabled={serverState.submitting}>Enviar</Button>
                         {serverState.status && (
                             <p className={`form-output ${!serverState.status.ok ? "errorMsg" : "success"}`}>
                                 {serverState.status.msg}

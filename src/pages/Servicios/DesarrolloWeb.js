@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import Layout from "../../containers/layout/layout";
 import SEO from "../../components/seo";
-import { FiChevronUp , FiCheck } from "react-icons/fi";
+import {FiChevronUp, FiCheck} from "react-icons/fi";
 import Banner from "../../containers/blog/banner";
 import About from "../../containers/company/about";
 import Team from "../../components/team";
@@ -15,13 +15,14 @@ import simple3 from "../../data/servicios/3.jpg"
 import simple4 from "../../data/servicios/4.jpg"
 import Button from "../../components/shared/button";
 import {Link} from "gatsby";
+import ContactFormSection from "../../containers/contact/contact-form";
 
 
 export default () => {
     const [lang, setLang] = useState("eng");
 
     return (
-        <Layout>
+        <Layout layout="darkHeader" darkLogo={true}>
             <SEO title="DesarrolloWeb"/>
             {/* Start Page Wrapper  */}
             <main className="page-wrapper">
@@ -43,23 +44,22 @@ export default () => {
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1" style={{listStyle: "none"}}>
-                                                <li><FiCheck /> 5 Paginas Interactivas </li>
-                                                <li><FiCheck /> Diseño Moderno </li>
-                                                <li><FiCheck /> Rápido </li>
-                                                <li><FiCheck /> Representativo de tu marca </li>
-                                                <li><FiCheck /> Rápido </li>
-                                                <li><FiCheck /> Versión móvil </li>
-                                                <li><FiCheck /> Enlace a redes sociales </li>
-                                                <li><FiCheck /> Certificado SSL </li>
-                                                <li><FiCheck /> Formulario de contacto </li>
-                                                <li><FiCheck /> Google SEO </li>
-
+                                                <li><FiCheck/> 5 Paginas Interactivas</li>
+                                                <li><FiCheck/> Diseño Moderno</li>
+                                                <li><FiCheck/> Rápido</li>
+                                                <li><FiCheck/> Representativo de tu marca</li>
+                                                <li><FiCheck/> Rápido</li>
+                                                <li><FiCheck/> Versión móvil</li>
+                                                <li><FiCheck/> Enlace a redes sociales</li>
+                                                <li><FiCheck/> Certificado SSL</li>
+                                                <li><FiCheck/> Formulario de contacto</li>
+                                                <li><FiCheck/> Google SEO</li>
 
 
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">VER DETALLES!</a>
+                                            <a className="rn-btn" href="/contact">ESTOY INTERESADO!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -79,21 +79,21 @@ export default () => {
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1" style={{listStyle: "none"}}>
-                                                <li><FiCheck /> 15 Paginas Interactivas </li>
-                                                <li><FiCheck /> Diseño Moderno </li>
-                                                <li><FiCheck /> Rápido </li>
-                                                <li><FiCheck /> Representativo de tu marca </li>
-                                                <li><FiCheck /> Rápido </li>
-                                                <li><FiCheck /> Versión móvil </li>
-                                                <li><FiCheck /> Enlace a redes sociales </li>
-                                                <li><FiCheck /> Certificado SSL </li>
-                                                <li><FiCheck /> Formulario de contacto </li>
-                                                <li><FiCheck /> Google SEO </li>
-                                                <li><FiCheck /> Uso Especializado </li>
+                                                <li><FiCheck/> 15 Paginas Interactivas</li>
+                                                <li><FiCheck/> Diseño Moderno</li>
+                                                <li><FiCheck/> Rápido</li>
+                                                <li><FiCheck/> Representativo de tu marca</li>
+                                                <li><FiCheck/> Rápido</li>
+                                                <li><FiCheck/> Versión móvil</li>
+                                                <li><FiCheck/> Enlace a redes sociales</li>
+                                                <li><FiCheck/> Certificado SSL</li>
+                                                <li><FiCheck/> Formulario de contacto</li>
+                                                <li><FiCheck/> Google SEO</li>
+                                                <li><FiCheck/> Uso Especializado</li>
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">Ver Mas!</a>
+                                            <a className="rn-btn" href="/contact">ESTOY INTERESADO!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -105,33 +105,27 @@ export default () => {
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">APLICACIÓN WEB</h4>
+                                            <h4 className="title" >APLICACIÓN WEB</h4>
                                             <div className="pricing">
-                                                <span className="price">VARIABLE</span>
+                                                <span className="price" style={{fontSize: "60px"}}>VARIABLE</span>
                                                 <span className="subtitle">MXN</span>
                                             </div>
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1" style={{listStyle: "none"}}>
-                                                <li><FiCheck /> Personalised Website</li>
-                                                <li><FiCheck /> SEO Optimisation</li>
-                                                <li><FiCheck /> Google Analytics Implementation</li>
-                                                <li><FiCheck /> UI/UX Unique Design</li>
-                                                <li><FiCheck /> Hosting Support</li>
-                                                <li><FiCheck /> Ongoing Support</li>
-                                                <li><FiCheck /> Any Extras You Need</li>
+                                                <li><FiCheck/> Todo lo de SITIO ESPECIALIZADO </li>
+                                                <li><FiCheck/> Todo lo que necesites</li>
+                                                <li><FiCheck/> Plan echo a la medida para cumplir todas tus necesidades</li>
+
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">LET'S DO IT!</a>
+                                            <a className="rn-btn" href="/contact">ESTOY INTERESADO!</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             {/* End PRicing Table Area  */}
-
-
-
 
 
                         </div>
@@ -142,67 +136,70 @@ export default () => {
             {/* End Page Wrapper  */}
 
             <div>
-                <div className="row" style={{backgroundColor:"#15171B"}}>
+                <div className="row" style={{backgroundColor: "#15171B"}}>
                     <div className="col-3 vividworknav">
-                        <a target="_blank"  href="https://uncoverindex.com/index">
-                        <img src={simple1}  style={{paddingLeft:"50px",paddingTop:"50px"}}/>
-                        <div class="work-text-content" style={{position: "absolute"}}>
-                            <h1>APLICACIÓN WEB</h1>
-                            <h3>Uncover Index </h3>
-                            <p>En Desarollo</p>
-                        </div>
+                        <a target="_blank" href="https://uncoverindex.com/index">
+                            <img src={simple1} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+                            <div class="work-text-content" style={{position: "absolute"}}>
+                                <h1>APLICACIÓN WEB</h1>
+                                <h3>Uncover Index </h3>
+                                <p>En Desarollo</p>
+                            </div>
                         </a>
                     </div>
-                    <div target="_blank"  className="col-3 vividworknav">
+                    <div target="_blank" className="col-3 vividworknav">
                         <a href="https://honey-pot-agency.ts.r.appspot.com">
-                        <img src={simple2}  style={{paddingLeft:"50px",paddingTop:"50px"}}/>
-                        <div className="work-text-content" style={{position: "absolute"}}>
-                            <h1>BÁSICO</h1>
-                            <h3>HONEY POT AGENCY</h3>
-                            <p>Agencia de Marketing Australia</p>
-                        </div>
+                            <img src={simple2} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+                            <div className="work-text-content" style={{position: "absolute"}}>
+                                <h1>BÁSICO</h1>
+                                <h3>HONEY POT AGENCY</h3>
+                                <p>Agencia de Marketing Australia</p>
+                            </div>
                         </a>
                     </div>
                     <div className="col-3 vividworknav">
                         <a href="https://joy-city-291022.an.r.appspot.com" target="_blank">
-                        <img src={simple3}  style={{paddingLeft:"50px",paddingTop:"50px",paddingBottom:"50px"}}/>
-                        <div className="work-text-content" style={{position: "absolute"}}>
-                            <h1>SITIO ESPECIALIZADO</h1>
-                            <h3>Joy City</h3>
-                            <p>Centro Comercial China</p>
-                        </div>
+                            <img src={simple3}
+                                 style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
+                            <div className="work-text-content" style={{position: "absolute"}}>
+                                <h1>SITIO ESPECIALIZADO</h1>
+                                <h3>Joy City</h3>
+                                <p>Centro Comercial China</p>
+                            </div>
                         </a>
                     </div>
                     <div className="col-3 vividworknav">
                         <a target="_blank" href="https://noicetech.com.au">
-                        <img src={simple4}  style={{paddingLeft:"50px",paddingTop:"50px",paddingBottom:"50px"}}/>
-                        <div className="work-text-content" style={{position: "absolute"}}>
-                            <h1>BÁSICO</h1>
-                            <h3>NOICE TECH</h3>
-                            <p>Agencia Digital Australia</p>
-                        </div>
+                            <img src={simple4}
+                                 style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
+                            <div className="work-text-content" style={{position: "absolute"}}>
+                                <h1>BÁSICO</h1>
+                                <h3>NOICE TECH</h3>
+                                <p>Agencia Digital Australia</p>
+                            </div>
                         </a>
                     </div>
 
 
                 </div>
             </div>
+            <ContactFormSection/>
 
-            <div className="col-3 offset-2" style={{padding:"20px"}}>
-            <Button fontSize="40px" as={Link} to="/contact" layout={2}>Contactanos! <i className="ti-arrow-right"></i> </Button>
-            </div>
 
-            <div >
-                <div className="col-3 offset-1"  style={{padding:"20px", }}>
-                    <h1>Detalles</h1>
+            <div>
+                <div className="col-3 offset-1" style={{paddingTop: "20px", paddingBottom: "20px", paddingLeft: "0px"}}>
+                    <h3>Detalles</h3>
                 </div>
-                <div className="col-3 offset-1"  style={{padding:"10px"}}>
+                <div className="col-3 offset-1" style={{padding: "10px"}}>
 
-                    <h3>Sitio Basico</h3>
-                    <p>Incluye 5 paginas interactivas, pero se pueden agregar mas cada una con un costo de 1,500 por pagina</p>
-                    <p>No incluye el contenido </p>
-                    <p>No incluye fotografias </p>
-                    <p>No incluye paginas especialisadas como son: mapas, busquedas avansadas, cotisaciones, bases de datos y similares. contactar a un ejecutivo para especificos  </p>
+                    <h4>Sitio Basico</h4>
+                    <p>Este paquete incluye 5 paginas interactivas, pero se pueden agregar más por $1,500 por página.
+                        Para páginas especializadas como son: mapas, búsquedas avanzadas, cotizaciones, bases de datos y
+                        similares revisa nuestro paquete especializado. Contacta a un ejecutivo para más
+                        información. </p>
+
+                    <h4>Sitio especializado </h4>
+                    <p></p>
                 </div>
             </div>
 

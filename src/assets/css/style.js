@@ -692,7 +692,7 @@ export const GlobalCSS = createGlobalStyle `
             content: "";
             left: 0;
             top: 0;
-            background-image: linear-gradient(to right, #4A00B6 , #4D00E1);
+            background-image: linear-gradient(145deg, #4A00B6 0%, #9B0FB6 100%);
             width: 100%;
             height: 100%;
             z-index: -1;
@@ -985,7 +985,7 @@ export const GlobalCSS = createGlobalStyle `
                 span {
                     display: block;
                     &.price {
-                        font-size: 100px;
+                        font-size: 70px;
                         color: #4A00B6;
                         line-height: 1;
                     }

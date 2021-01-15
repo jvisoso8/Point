@@ -19,7 +19,7 @@ export default () => {
 
             <SEO title="Home"/>
             <Hero lang={lang} setLang={setLang}/>
-            <Story lang={lang}/>
+
 
             {/* Start Service Area  */}
             <div className="service-area creative-service-wrapper ptb--120 bg_color--1">
@@ -33,6 +33,7 @@ export default () => {
             </div>
             {/* End Service Area  */}
 
+            <Story lang={lang}/>
             <ClientSection lang={lang}/>
 
 

@@ -7,6 +7,9 @@ import Text from '../../../components/shared/text'
 import Link from '../../../components/shared/link'
 import MapContainer from '../../../components/map'
 import {SectionWrap, ContactInfoWrap, SingleInfo, MapWrapper} from './contact-info.stc'
+import Image from "../../../components/image";
+import {BannerArea} from "../contact-form/contact-form.stc";
+import imageData from "../../../data/servicios/contact-2.webp"
 
 const ContactInfo = ({infoTextStyle, infoHeadingStyle, infoLinkStyle}) => {
 
@@ -56,9 +59,13 @@ const ContactInfo = ({infoTextStyle, infoHeadingStyle, infoLinkStyle}) => {
                     </ContactInfoWrap>
                 </div>
                 <div className="col-3 offset-1">
-                    <MapWrapper>
+                    <BannerArea id="">
+                        <Image fluid={imageData} alt="ContactFoto" />
+                    </BannerArea>
+
+                    {/*<MapWrapper>
                         <MapContainer/>
-                    </MapWrapper>
+                    </MapWrapper>*/}
                 </div>
             </div>
         </SectionWrap>

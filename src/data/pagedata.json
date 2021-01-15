@@ -10,8 +10,8 @@
     {
         "id": "contact_page_data",
         "banner_img": "./images/contact.jpg",
-        "title": "Contact Us",
-        "subtitle": "Begin your transformation today and reach your full potential."
+        "title": "contactanos",
+        "subtitle": "Comienza tu transformacion hoy y logra a tu potencial."
     },
     {
         "id": "blog_page_data",
