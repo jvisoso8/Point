@@ -76,7 +76,7 @@ const Footer = ({
 					{email && <Text {...emailTextStyle}><Link to="/contact" {...emailLinkStyle}>{email}</Link></Text>}
 				</FooterMiddleLeft>
 				<FooterMiddleRight>
-					<Heading {...widgetTitleStyle}>Quick Information.</Heading>
+					<Heading {...widgetTitleStyle}>Información Rápida</Heading>
 					<AddressWrap>
 						{postal_code && (
 							<Address>
@@ -111,7 +111,7 @@ const Footer = ({
 				<FooterBottomRight>
 					<Social {...socialStyle}>
 						{facebook && <SocialLink path={facebook}>Facebook</SocialLink>}
-						{twitter && <SocialLink path={twitter}>Twiiter</SocialLink>}
+						{twitter && <SocialLink path={twitter}>Instagram</SocialLink>}
 						{linkedin && <SocialLink path={linkedin}>Linkedin</SocialLink>}
 					</Social>
 				</FooterBottomRight>

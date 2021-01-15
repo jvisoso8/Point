@@ -7,9 +7,9 @@
 module.exports = {
     pathPrefix: `/`,
     siteMetadata: {
-        title: "Point Technologies",
+        title: "Point Tech",
         titleTemplate: `Point.`,
-        description: `We know tech, let us be your strategic partner and place you at the vanguard of the digital transformation. Maximize your efficiency through our technological tools and innovative strategies.`,
+        description: `Sabemos de tecnología, déjanos ser tu aliado estratégico y colocarte a la vanguardia de la transformación digital. Maximiza tu eficiencia a través de nuestras herramientas tecnológicas y estrategias innovadoras.`,
         author: `Jose Visoso`,
         twitterUsername: ``,
         image: 'bg-image-1.jpg',
@@ -18,15 +18,15 @@ module.exports = {
         contact: {
             postal_code: 'Sydney, Australia <br/> Mexico City, Mexico',
             address: ' Minerva 72, colonia crédito constructor 03940, Benito Juárez CDMX',
-            email: 'contact@pointech.dev',
-            company_email: 'contact@pointech.dev',
+            email: 'contacto@pointech.dev',
+            company_email: 'contact0@pointech.dev',
             company_address: ' Minerva 72, Colonia Crédito Constructor 03940, Benito Juárez CDMX',
             phone: '+52 1 55 7845 7977',
             phone2: '+52 1 55 4454 5417',
             social: {
-                facebook: 'https://facebook.com',
-                twitter: 'https://twitter.com',
-                linkedin: 'https://linkedin.com',
+                facebook: 'https://www.facebook.com/Pointech.consulting',
+                twitter: 'https://www.instagram.com/pointech.dev/',
+                linkedin: 'https://www.linkedin.com/company/point-tech-consulting/',
                 dribbble: 'https://dribbble.com'
             }
         },
@@ -79,7 +79,7 @@ module.exports = {
             },
         },
         {
-            resolve: `gatsby-plugin-prefetch-google-fonts`,
+            resolve: `gatsby-plugin-google-fonts`,
             options: {
                 fonts: [
                     {
