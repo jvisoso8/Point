@@ -6,7 +6,7 @@ const ServiceList = [
         icon: <FiMonitor />,
         title: 'Web Development',
         description: 'We create stunning, impactful websites customised for all your business needs. Stand out. Tell your story. Find more, better customers than ever before.',
-        url: "/service-details/webDevelopment"
+        url: "/Servicios/DesarrolloWeb/"
     },
     {
         icon: <FiTablet />,
