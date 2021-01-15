@@ -118,7 +118,7 @@ const Hero = (props) => {
                                 </ContentBottomRight>
                                 <br/>
                                 <br/>
-
+                                {/*
                                 <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
                                     console.log("click")
                                     props.setLang("esp")
@@ -131,6 +131,7 @@ const Hero = (props) => {
                                     console.log("click")
                                     props.setLang("fra")
                                 }}>Français</Button>
+                                */}
 
                             </ContentBottomInner>
                         </div>
@@ -148,7 +149,7 @@ const Hero = (props) => {
                 <ContentWrapper>
                     <ContetnTop>
 
-                        <div className="col-6 offset-1">
+                        <div className="col-5 offset-1">
                             {date && <Text {...descStyle}>{date}</Text>}
                             {title &&
                             <Heading {...headingStyle}> {titleEsp} <br/>{title1Esp} <br/> {title2Esp} </Heading>}
@@ -177,19 +178,7 @@ const Hero = (props) => {
                                         </ClientWrap>
                                     )}
                                 </ContentBottomRight>
-                                <br/>
-                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
-                                    console.log("click")
-                                    props.setLang("esp")
-                                }}>español</Button>
-                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
-                                    console.log("click")
-                                    props.setLang("eng")
-                                }}>English</Button>
-                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
-                                    console.log("click")
-                                    props.setLang("fra")
-                                }}>Français</Button>
+
                             </ContentBottomInner>
                         </div>
                     </ContentBottom>
@@ -237,19 +226,7 @@ const Hero = (props) => {
                                         </ClientWrap>
                                     )}
                                 </ContentBottomRight>
-                                <br/>
-                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
-                                    console.log("click")
-                                    props.setLang("esp")
-                                }}>español</Button>
-                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
-                                    console.log("click")
-                                    props.setLang("eng")
-                                }}>English</Button>
-                                <Button style={{color: "#fff"}} fontSize="20px" layout={1} onClick={() => {
-                                    console.log("click")
-                                    props.setLang("fra")
-                                }}>Français</Button>
+
                             </ContentBottomInner>
                         </div>
                     </ContentBottom>

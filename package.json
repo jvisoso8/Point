@@ -16,7 +16,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.6",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.5.3",
     "disqus-react": "^1.0.7",
     "gatsby": "^2.17.11",
     "gatsby-background-image": "^0.9.12",
@@ -44,6 +44,7 @@
     "react-gsap": "^1.2.0",
     "react-helmet": "^5.2.1",
     "react-hook-form": "^5.7.2",
+    "react-icons": "^4.1.0",
     "react-modal-video": "^1.2.3",
     "react-particles-js": "^2.7.0",
     "react-scrollmagic": "^2.1.1",
