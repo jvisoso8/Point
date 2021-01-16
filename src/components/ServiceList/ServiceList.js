@@ -42,7 +42,7 @@ const ServiceList = [
         icon:  <FiBarChart />,
         title: 'Facebook & Google Analytics',
         description: ' Te brindamos información sobre tus clientes y tu negocio. Obtén métricas e informes personalizados cada mes y mantén un pulso continuo en tu negocio aprovechando el poder de los datos.',
-        url: "/service-details/Analytics"
+        url: "//Servicios/FacebookGoogleAnalitics/"
     },
     {
         icon:  <FiUsers />,

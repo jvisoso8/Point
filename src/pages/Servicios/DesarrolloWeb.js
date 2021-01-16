@@ -158,8 +158,12 @@ export default () => {
             </main>
             {/* End Page Wrapper  */}
 
-            <div id="#examples">
-                <div className="row" style={{backgroundColor: "#15171B"}}>
+            <div id="#examples" >
+                <div style={{color:"#000", padding:"20px", textAlign:"center"}} >
+                    <h1>NUESTRO PORTAFOLIO</h1>
+                </div>
+                <div className="row" style={{backgroundColor: "#15171B"}} >
+
                     <div className="col-3 vividworknav">
                         <a target="_blank" href="https://uncoverindex.com/index">
                             <img src={simple1} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
