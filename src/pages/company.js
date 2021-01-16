@@ -16,7 +16,9 @@ export default () => {
             <SEO title="Company"/>
             <Banner lang={lang} />
             <About lang={lang} setLang={setLang}/>
+            {/*
             <Team lang={lang}/>
+            */}
         </Layout>
     )
 

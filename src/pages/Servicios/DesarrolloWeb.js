@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import Layout from "../../containers/layout/layout";
 import SEO from "../../components/seo";
 import {FiChevronUp, FiCheck} from "react-icons/fi";
-import Banner from "../../containers/blog/banner";
+import Banner from "../../containers/company/banner";
 import About from "../../containers/company/about";
 import Team from "../../components/team";
 import {AboutSectionWrap, SectionTitle} from "../../containers/company/about/about.stc";
@@ -13,16 +13,27 @@ import simple1 from "../../data/servicios/1.jpg"
 import simple2 from "../../data/servicios/2.jpg"
 import simple3 from "../../data/servicios/3.jpg"
 import simple4 from "../../data/servicios/4.jpg"
+import banner from "../../data/servicios/6.jpg"
 import Button from "../../components/shared/button";
 import {Link} from "gatsby";
 import ContactFormSection from "../../containers/contact/contact-form";
+import { FiArrowDown} from "react-icons/fi";
+import {ScrollTop} from "../../containers/layout/footer/footer.stc";
 
+const scrollHandler = () => {
+    let element_to_scroll_to = document.getElementById('#examples');
+    element_to_scroll_to.scrollIntoView({  behavior: 'smooth' });
+   // window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 export default () => {
     const [lang, setLang] = useState("eng");
 
     return (
-        <Layout layout="darkHeader" darkLogo={true}>
+        <Layout >
+            <div className="banner-area">
+                <img src={banner} alt="pricing Banner" style={{width:"100%",height:"400px"}}/>
+            </div>
             <SEO title="DesarrolloWeb"/>
             {/* Start Page Wrapper  */}
             <main className="page-wrapper">
@@ -33,42 +44,7 @@ export default () => {
 
                             {/* Start PRicing Table Area  */}
                             <div className="col-lg-4 col-md-6 col-12" style={{marginBottom: "20px"}}>
-                                <div className="rn-pricing">
-                                    <div className="pricing-table-inner">
-                                        <div className="pricing-header">
-                                            <h4 className="title">BÁSICO</h4>
-                                            <div className="pricing">
-                                                <span className="price">15,000</span>
-                                                <span className="subtitle">MXN </span>
-                                            </div>
-                                        </div>
-                                        <div className="pricing-body">
-                                            <ul className="list-style--1" style={{listStyle: "none"}}>
-                                                <li><FiCheck/> 5 Paginas Interactivas</li>
-                                                <li><FiCheck/> Diseño Moderno</li>
-                                                <li><FiCheck/> Rápido</li>
-                                                <li><FiCheck/> Representativo de tu marca</li>
-                                                <li><FiCheck/> Rápido</li>
-                                                <li><FiCheck/> Versión móvil</li>
-                                                <li><FiCheck/> Enlace a redes sociales</li>
-                                                <li><FiCheck/> Certificado SSL</li>
-                                                <li><FiCheck/> Formulario de contacto</li>
-                                                <li><FiCheck/> Google SEO</li>
-
-
-                                            </ul>
-                                        </div>
-                                        <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">ESTOY INTERESADO!</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* End PRicing Table Area  */}
-
-                            {/* Start PRicing Table Area  */}
-                            <div className="col-lg-4 col-md-6 col-12" style={{marginBottom: "20px"}}>
-                                <div className="rn-pricing ">
+                                <div className="rn-pricing active">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
                                             <h4 className="title">SITIO ESPECIALIZADO</h4>
@@ -105,6 +81,43 @@ export default () => {
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
+                                            <h4 className="title">BÁSICO</h4>
+                                            <div className="pricing">
+                                                <span className="price">15,000</span>
+                                                <span className="subtitle">MXN </span>
+                                            </div>
+                                        </div>
+                                        <div className="pricing-body">
+                                            <ul className="list-style--1" style={{listStyle: "none"}}>
+                                                <li><FiCheck/> 5 Paginas Interactivas</li>
+                                                <li><FiCheck/> Diseño Moderno</li>
+                                                <li><FiCheck/> Rápido</li>
+                                                <li><FiCheck/> Representativo de tu marca</li>
+                                                <li><FiCheck/> Rápido</li>
+                                                <li><FiCheck/> Versión móvil</li>
+                                                <li><FiCheck/> Enlace a redes sociales</li>
+                                                <li><FiCheck/> Certificado SSL</li>
+                                                <li><FiCheck/> Formulario de contacto</li>
+                                                <li><FiCheck/> Google SEO</li>
+
+
+                                            </ul>
+                                        </div>
+                                        <div className="pricing-footer">
+                                            <a className="rn-btn" href="/contact">ESTOY INTERESADO!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* End PRicing Table Area  */}
+
+
+
+                            {/* Start PRicing Table Area  */}
+                            <div className="col-lg-4 col-md-6 col-12" style={{marginBottom: "20px"}}>
+                                <div className="rn-pricing">
+                                    <div className="pricing-table-inner">
+                                        <div className="pricing-header">
                                             <h4 className="title" >APLICACIÓN WEB</h4>
                                             <div className="pricing">
                                                 <span className="price" style={{fontSize: "60px"}}>VARIABLE</span>
@@ -124,18 +137,28 @@ export default () => {
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
+
+
                             {/* End PRicing Table Area  */}
 
 
+
                         </div>
+                        <ScrollTop className="creative-cursor" onClick={scrollHandler}>
+                            <FiArrowDown style={{height:"100px", size:"100px", width:"auto", position:"absolute",right:"0px",padding:"10px",top:"0"}} />
+                        </ScrollTop>
+
                     </div>
+
                 </div>
                 {/* End Pricing Tbale Area  */}
+
             </main>
             {/* End Page Wrapper  */}
 
-            <div>
+            <div id="#examples">
                 <div className="row" style={{backgroundColor: "#15171B"}}>
                     <div className="col-3 vividworknav">
                         <a target="_blank" href="https://uncoverindex.com/index">

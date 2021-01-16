@@ -13,7 +13,7 @@ const BlogList = (props) => {
     const {currentPage, numberOfPages} = props.pageContext;
 
     return(
-        <Layout>
+        <Layout headerStyle="darkHeader">
             <SEO title={`Blog page - ${currentPage}`}/>
             <Banner/>
             <SectionWrap>

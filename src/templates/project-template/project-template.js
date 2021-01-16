@@ -24,7 +24,7 @@ const ProjectTemplate = ({data, pageContext: {next, previous}, ...restProps}) =>
     const projectData = data.projectsJson;
     const { body, features, cover_image} = projectData;
     return (
-        <Layout>
+        <Layout headerStyle="darkHeader">
             <SEO title={projectData.title}/>
             <Banner/>
             <ProjectDetailsWrap>

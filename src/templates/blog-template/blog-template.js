@@ -28,7 +28,7 @@ function BlogTemplate({data, ...restProps}) {
         title: post.title,
     }; 
     return (
-        <Layout>
+        <Layout headerStyle="darkHeader">
             <SEO title={post.title}/>
             <BlogDetailsWrap>
                 <BlogDetailsHeader fluid={imageData}>

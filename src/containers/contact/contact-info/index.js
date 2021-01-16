@@ -34,7 +34,7 @@ const ContactInfo = ({infoTextStyle, infoHeadingStyle, infoLinkStyle}) => {
                 <div className="col-1 offset-1">
                     <ContactInfoWrap>
                         <SectionTitle
-                            title="Contact Info."
+                            title="Informacion de Contacto."
                         />
                         {company_address && (
                             <SingleInfo className="wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1000ms">
@@ -59,9 +59,9 @@ const ContactInfo = ({infoTextStyle, infoHeadingStyle, infoLinkStyle}) => {
                     </ContactInfoWrap>
                 </div>
                 <div className="col-3 offset-1">
-                    <BannerArea id="">
-                        <Image fluid={imageData} alt="ContactFoto" />
-                    </BannerArea>
+
+                        <img src={imageData} alt="ContactFoto" style={{padding:"0px", height:"100%"}}/>
+
 
                     {/*<MapWrapper>
                         <MapContainer/>

@@ -5,7 +5,7 @@ import Banner from '../containers/projects/banner'
 import Project from '../containers/projects/project'
 
 export default () => (
-    <Layout>
+    <Layout headerStyle="darkHeader">
         <SEO title="Project"/>
         <Banner/>
         <Project/>
