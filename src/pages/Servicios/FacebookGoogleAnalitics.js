@@ -47,25 +47,18 @@ export default () => {
                                 <div className="rn-pricing active">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">SITIO ESPECIALIZADO</h4>
+                                            <h4 className="title">PAQUETE INTERMEDIO</h4>
                                             <div className="pricing">
-                                                <span className="price">30,000</span>
-                                                <span className="subtitle">MXN</span>
+                                                <span className="price">5,000 </span>
+                                                <span className="subtitle">MXN primer mes, despues 1,200 MXN mensuales</span>
                                             </div>
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1" style={{listStyle: "none"}}>
-                                                <li><FiCheck/> 15 Paginas Interactivas</li>
-                                                <li><FiCheck/> Diseño Moderno</li>
-                                                <li><FiCheck/> Rápido</li>
-                                                <li><FiCheck/> Representativo de tu marca</li>
-                                                <li><FiCheck/> Rápido</li>
-                                                <li><FiCheck/> Versión móvil</li>
-                                                <li><FiCheck/> Enlace a redes sociales</li>
-                                                <li><FiCheck/> Certificado SSL</li>
-                                                <li><FiCheck/> Formulario de contacto</li>
-                                                <li><FiCheck/> Google SEO</li>
-                                                <li><FiCheck/> Uso Especializado</li>
+                                                <li><FiCheck/> Setup</li>
+                                                <li><FiCheck/> Reporte mensual</li>
+                                                <li><FiCheck/> Monitoreo de eventos específicos</li>
+                                                <li><FiCheck/> Primer Curso de capacitación</li>
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
@@ -81,26 +74,16 @@ export default () => {
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">BÁSICO</h4>
+                                            <h4 className="title">PAQUETE BÁSICO</h4>
                                             <div className="pricing">
-                                                <span className="price">15,000</span>
-                                                <span className="subtitle">MXN </span>
+                                                <span className="price">3,000</span>
+                                                <span className="subtitle">MXN primer mes, despues 1,000 MXN mensuales </span>
                                             </div>
                                         </div>
                                         <div className="pricing-body">
                                             <ul className="list-style--1" style={{listStyle: "none"}}>
-                                                <li><FiCheck/> 5 Paginas Interactivas</li>
-                                                <li><FiCheck/> Diseño Moderno</li>
-                                                <li><FiCheck/> Rápido</li>
-                                                <li><FiCheck/> Representativo de tu marca</li>
-                                                <li><FiCheck/> Rápido</li>
-                                                <li><FiCheck/> Versión móvil</li>
-                                                <li><FiCheck/> Enlace a redes sociales</li>
-                                                <li><FiCheck/> Certificado SSL</li>
-                                                <li><FiCheck/> Formulario de contacto</li>
-                                                <li><FiCheck/> Google SEO</li>
-
-
+                                                <li><FiCheck/> Setup</li>
+                                                <li><FiCheck/> Reporte mensual </li>
                                             </ul>
                                         </div>
                                         <div className="pricing-footer">
@@ -113,35 +96,7 @@ export default () => {
 
 
 
-                            {/* Start PRicing Table Area  */}
-                            <div className="col-lg-4 col-md-6 col-12" style={{marginBottom: "20px"}}>
-                                <div className="rn-pricing">
-                                    <div className="pricing-table-inner">
-                                        <div className="pricing-header">
-                                            <h4 className="title" >APLICACIÓN WEB</h4>
-                                            <div className="pricing">
-                                                <span className="price" style={{fontSize: "60px"}}>VARIABLE</span>
-                                                <span className="subtitle">MXN</span>
-                                            </div>
-                                        </div>
-                                        <div className="pricing-body">
-                                            <ul className="list-style--1" style={{listStyle: "none"}}>
-                                                <li><FiCheck/> Todo lo de SITIO ESPECIALIZADO </li>
-                                                <li><FiCheck/> Todo lo que necesites</li>
-                                                <li><FiCheck/> Plan echo a la medida para cumplir todas tus necesidades</li>
 
-                                            </ul>
-                                        </div>
-                                        <div className="pricing-footer">
-                                            <a className="rn-btn" href="/contact">ESTOY INTERESADO!</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                            {/* End PRicing Table Area  */}
 
 
 
@@ -215,10 +170,17 @@ export default () => {
                 </div>
                 <div className="col-3 offset-1" style={{padding: "10px"}}>
 
-                    <h4>Sitio Basico</h4>
-                    <p>Incluye 5 paginas interactivas, pero se pueden agregar más por $1,500 por página. No incluye el contenido. No incluye fotografías. No incluye páginas especializadas como son: mapas, búsquedas avanzadas, cotizaciones, bases de datos y similares. contactar a un ejecutivo para más información.</p>
+                    <h4>
+                        Paquetes
+                    </h4>
+                    <p>Estos precios estan calculados para un sitio mediano de 5-10 paginas</p>
 
-                    <h4>Sitio especializado </h4>
+                    <h4>
+                        Cursos
+                    </h4>
+                    <p>Curso de capacitación básico (45 mins) sesión única 1,000 MXN </p>
+                    <p>Curso de capacitación Intermedio (2 horas) dos sesiones de una hora 2,000 MXN </p>
+
                     <p></p>
                 </div>
             </div>

@@ -26,7 +26,7 @@ export default () => {
                 <div className="container">
                     <div className="row creative-service">
                         <div className="col-lg-12">
-                            <ServiceList item="6" column="col-lg-4 col-md-6 col-sm-6 col-12 text-left"/>
+                            <ServiceList item="7" column="col-lg-4 col-md-6 col-sm-6 col-12 text-left"/>
                         </div>
                     </div>
                 </div>

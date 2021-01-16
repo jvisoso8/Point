@@ -1,23 +1,23 @@
 import React ,{ Component }from "react";
-import { FiUsers , FiMonitor, FiTablet, FiSearch, FiShoppingCart, FiCamera, FiCrosshair,FiActivity ,FiBarChart2,FiMove} from "react-icons/fi";
+import { FiUsers , FiMonitor, FiTablet, FiSearch, FiShoppingCart, FiCamera, FiCrosshair,FiActivity ,FiBarChart2,FiMove,FiBarChart} from "react-icons/fi";
 
 const ServiceList = [
     {
         icon: <FiMonitor />,
         title: 'Desarrollo Web',
-        description: 'We create stunning, impactful websites customised for all your business needs. Stand out. Tell your story. Find more, better customers than ever before.',
+        description: 'Creamos sitios web impactantes, adaptados a todas las necesidades de tu negocio. Destaca. Cuenta tu historia. Encuentra más y mejores clientes que nunca.',
         url: "/Servicios/DesarrolloWeb/"
     },
     {
         icon: <FiTablet />,
         title: 'Desarrollo de Apps',
-        description: 'We take your brilliant App idea, help you shape it in a way that works smoothly, and bring your vision to life.',
+        description: 'Tomamos tu brillante idea de aplicación y te ayudamos a moldearla en una forma que funcione sin problemas y lleve su visión a la vida.',
         url: "/service-details/AppDevelopment"
     },
     {
         icon: <FiSearch />,
         title: 'SEO',
-        description: 'We help you skyrocket your Google ranking by optimising your website content and developing ongoing, keyword-optimised content. Reach customers when they’re in the mindset of finding you.',
+        description: 'Te ayudamos a disparar tu ranking de google al optimizar el contenido de tu sitio web y desarrollar contenido continuo eficiente en palabras clave. Alcanza clientes que buscan tus productos.',
         url: "/service-details/SEO"
     },
     {
@@ -29,7 +29,7 @@ const ServiceList = [
     {
         icon: <FiShoppingCart />,
         title: 'E-Commerce',
-        description: 'We take your business to the next level by opening an entirely new sales channel for you. Sell direct to your customers and get a greater cut of the profit while offering a seamless experience.',
+        description: 'Llevamos a tu negocio al siguiente nivel abriendo canales de venta completamente nuevos. Vende directo a tus clientes y obtén una mayor utilidad a través de una experiencia perfecta innovadora.',
         url: "/service-details/ECommerce"
     },
     {
@@ -39,9 +39,15 @@ const ServiceList = [
         url: "/service-details/Analytics"
     },
     {
+        icon:  <FiBarChart />,
+        title: 'Facebook & Google Analytics',
+        description: ' Te brindamos información sobre tus clientes y tu negocio. Obtén métricas e informes personalizados cada mes y mantén un pulso continuo en tu negocio aprovechando el poder de los datos.',
+        url: "/service-details/Analytics"
+    },
+    {
         icon:  <FiUsers />,
         title: 'Marketing',
-        description: ' We give you a whole new layer of insight into your customers, your competitors and your business. Get custom metrics and reports every month and continuously keep a pulse on your business.',
+        description: ' Te ayudamos a alcanzar miles de clientes potenciales y a contar tu historia de manera persuasiva, creativa y memorable.',
         url: "/service-details/Analytics"
     }
 ]
