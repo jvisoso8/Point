@@ -12,13 +12,13 @@ const ServiceList = [
         icon: <FiTablet />,
         title: 'Desarrollo de Apps',
         description: 'Tomamos tu brillante idea de aplicación y te ayudamos a moldearla en una forma que funcione sin problemas y lleve su visión a la vida.',
-        url: "/service-details/AppDevelopment"
+        url: "/Servicios/DesarrolloApp/"
     },
     {
         icon: <FiSearch />,
         title: 'SEO',
         description: 'Te ayudamos a disparar tu ranking de google al optimizar el contenido de tu sitio web y desarrollar contenido continuo eficiente en palabras clave. Alcanza clientes que buscan tus productos.',
-        url: "/service-details/SEO"
+        url: "/Servicios/SEO"
     },
     {
         icon: <FiMove />,
