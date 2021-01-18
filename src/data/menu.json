@@ -1,6 +1,6 @@
 [
     {
-        "title": "Home",
+        "title": "Inicio",
         "isSubmenu": false,
         "path": "/",
         "submenu": [
@@ -11,7 +11,7 @@
         ]
     },
     {
-        "title": "company",
+        "title": "Nosotros",
         "path": "/company"
     },
     {
@@ -19,12 +19,12 @@
         "path": "/blog"
     },
     {
-        "title": "Our Work",
+        "title": "Nuestro Trabajo",
         "path": "/project"
     },
 
     {
-        "title": "contact",
+        "title": "Contacto",
         "path": "/contact"
     }
 ]

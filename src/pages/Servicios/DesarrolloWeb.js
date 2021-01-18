@@ -128,7 +128,7 @@ export default () => {
                                             <ul className="list-style--1" style={{listStyle: "none"}}>
                                                 <li><FiCheck/> Todo lo de SITIO ESPECIALIZADO </li>
                                                 <li><FiCheck/> Todo lo que necesites</li>
-                                                <li><FiCheck/> Plan echo a la medida para cumplir todas tus necesidades</li>
+                                                <li><FiCheck/> Plan hecho a la medida para cumplir todas tus necesidades</li>
 
                                             </ul>
                                         </div>
@@ -221,8 +221,7 @@ export default () => {
 
                     <h4>Sitio Basico</h4>
                     <p>Incluye 5 paginas interactivas, pero se pueden agregar más por $1,500 por página. No incluye el contenido. No incluye fotografías. No incluye páginas especializadas como son: mapas, búsquedas avanzadas, cotizaciones, bases de datos y similares. contactar a un ejecutivo para más información.</p>
-
-                    <h4>Sitio especializado </h4>
+                    <h4> </h4>
                     <p></p>
                 </div>
             </div>

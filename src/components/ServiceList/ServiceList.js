@@ -26,12 +26,7 @@ const ServiceList = [
         description: 'We help you reach thousands of potential customers and tell your story in a persuasive, creative and memorable way.',
         url: "/service-details/SocialMediaMarketing"
     },
-    {
-        icon: <FiShoppingCart />,
-        title: 'E-Commerce',
-        description: 'Llevamos a tu negocio al siguiente nivel abriendo canales de venta completamente nuevos. Vende directo a tus clientes y obtén una mayor utilidad a través de una experiencia perfecta innovadora.',
-        url: "/service-details/ECommerce"
-    },
+
     {
         icon:  <FiCamera />,
         title: 'Fotografía',
@@ -43,6 +38,12 @@ const ServiceList = [
         title: 'Facebook & Google Analytics',
         description: ' Te brindamos información sobre tus clientes y tu negocio. Obtén métricas e informes personalizados cada mes y mantén un pulso continuo en tu negocio aprovechando el poder de los datos.',
         url: "//Servicios/FacebookGoogleAnalitics/"
+    },
+    {
+        icon: <FiShoppingCart />,
+        title: 'E-Commerce',
+        description: 'Llevamos a tu negocio al siguiente nivel abriendo canales de venta completamente nuevos. Vende directo a tus clientes y obtén una mayor utilidad a través de una experiencia perfecta innovadora.',
+        url: "/service-details/ECommerce"
     },
     {
         icon:  <FiUsers />,
