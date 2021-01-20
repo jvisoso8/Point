@@ -13,7 +13,7 @@ import simple1 from "../../data/servicios/1.jpg"
 import simple2 from "../../data/servicios/2.jpg"
 import simple3 from "../../data/servicios/3.jpg"
 import simple4 from "../../data/servicios/4.jpg"
-import banner from "../../data/servicios/6.jpg"
+import banner from "../../data/servicios/26.jpg"
 import Button from "../../components/shared/button";
 import {Link} from "gatsby";
 import ContactFormSection from "../../containers/contact/contact-form";
@@ -101,9 +101,7 @@ export default () => {
 
 
                         </div>
-                        <ScrollTop className="creative-cursor" onClick={scrollHandler}>
-                            <FiArrowDown style={{height:"100px", size:"100px", width:"auto", position:"absolute",right:"0px",padding:"10px",top:"0"}} />
-                        </ScrollTop>
+
 
                     </div>
 
@@ -113,77 +111,10 @@ export default () => {
             </main>
             {/* End Page Wrapper  */}
 
-            <div id="#examples">
-                <div className="row" style={{backgroundColor: "#15171B"}}>
-                    <div className="col-3 vividworknav">
-                        <a target="_blank" href="https://uncoverindex.com/index">
-                            <img src={simple1} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
-                            <div class="work-text-content" style={{position: "absolute"}}>
-                                <h1>APLICACIÓN WEB</h1>
-                                <h3>Uncover Index </h3>
-                                <p>En Desarollo</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div target="_blank" className="col-3 vividworknav">
-                        <a href="https://honey-pot-agency.ts.r.appspot.com">
-                            <img src={simple2} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
-                            <div className="work-text-content" style={{position: "absolute"}}>
-                                <h1>BÁSICO</h1>
-                                <h3>HONEY POT AGENCY</h3>
-                                <p>Agencia de Marketing Australia</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-3 vividworknav">
-                        <a href="https://joy-city-291022.an.r.appspot.com" target="_blank">
-                            <img src={simple3}
-                                 style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
-                            <div className="work-text-content" style={{position: "absolute"}}>
-                                <h1>SITIO ESPECIALIZADO</h1>
-                                <h3>Joy City</h3>
-                                <p>Centro Comercial China</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-3 vividworknav">
-                        <a target="_blank" href="https://noicetech.com.au">
-                            <img src={simple4}
-                                 style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
-                            <div className="work-text-content" style={{position: "absolute"}}>
-                                <h1>BÁSICO</h1>
-                                <h3>NOICE TECH</h3>
-                                <p>Agencia Digital Australia</p>
-                            </div>
-                        </a>
-                    </div>
 
-
-                </div>
-            </div>
             <ContactFormSection/>
 
 
-            <div>
-                <div className="col-3 offset-1" style={{paddingTop: "20px", paddingBottom: "20px", paddingLeft: "0px"}}>
-                    <h3>Detalles</h3>
-                </div>
-                <div className="col-3 offset-1" style={{padding: "10px"}}>
-
-                    <h4>
-                        Paquetes
-                    </h4>
-                    <p>Estos precios estan calculados para un sitio mediano de 5-10 paginas</p>
-
-                    <h4>
-                        Cursos
-                    </h4>
-                    <p>Curso de capacitación básico (45 mins) sesión única 1,000 MXN </p>
-                    <p>Curso de capacitación Intermedio (2 horas) dos sesiones de una hora 2,000 MXN </p>
-
-                    <p></p>
-                </div>
-            </div>
 
         </Layout>
     )
