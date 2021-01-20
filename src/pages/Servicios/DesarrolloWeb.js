@@ -49,7 +49,7 @@ export default () => {
                                         <div className="pricing-header">
                                             <h4 className="title">SITIO ESPECIALIZADO</h4>
                                             <div className="pricing">
-                                                <span className="price">30,000</span>
+                                                <span className="price" style={{fontSize: "40px"}}>VARIABLE</span>
                                                 <span className="subtitle">MXN</span>
                                             </div>
                                         </div>
@@ -120,7 +120,7 @@ export default () => {
                                         <div className="pricing-header">
                                             <h4 className="title" >APLICACIÓN WEB</h4>
                                             <div className="pricing">
-                                                <span className="price" style={{fontSize: "60px"}}>VARIABLE</span>
+                                                <span className="price" style={{fontSize: "40px"}}>VARIABLE</span>
                                                 <span className="subtitle">MXN</span>
                                             </div>
                                         </div>

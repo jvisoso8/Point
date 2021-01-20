@@ -88,7 +88,7 @@ const Hero = (props) => {
                 <ContentWrapper>
                     <ContetnTop>
 
-                        <div className="col-6 offset-1">
+                        <div className="col-6 offset-1" >
                             {date && <Text {...descStyle}>{date}</Text>}
                             {title && <Heading {...headingStyle}> {title} <br/>{title1} {title2} </Heading>}
                             {btn_link &&

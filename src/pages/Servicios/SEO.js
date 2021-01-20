@@ -7,18 +7,26 @@ import About from "../../containers/company/about";
 import Team from "../../components/team";
 import {AboutSectionWrap, SectionTitle} from "../../containers/company/about/about.stc";
 import Heading from "../../components/shared/heading";
-import {BannerArea} from "../../containers/contact/contact-form/contact-form.stc";
+import {
+    BannerArea,
+    ContactFormWrap,
+    ContactSectionWrap,
+    ContactWrap
+} from "../../containers/contact/contact-form/contact-form.stc";
 import Image from "../../components/image";
 import simple1 from "../../data/servicios/1.jpg"
 import simple2 from "../../data/servicios/2.jpg"
 import simple3 from "../../data/servicios/3.jpg"
 import simple4 from "../../data/servicios/4.jpg"
 import banner from "../../data/servicios/16.jpg"
+import imageData from "../../data/servicios/31.jpeg"
 import Button from "../../components/shared/button";
 import {Link} from "gatsby";
 import ContactFormSection from "../../containers/contact/contact-form";
 import { FiArrowDown} from "react-icons/fi";
 import {ScrollTop} from "../../containers/layout/footer/footer.stc";
+import Text from "../../components/shared/text";
+import ContactForm from "../../components/contact-form";
 
 const scrollHandler = () => {
     let element_to_scroll_to = document.getElementById('#examples');
@@ -28,7 +36,7 @@ const scrollHandler = () => {
 
 export default () => {
     const [lang, setLang] = useState("eng");
-
+    const form_url  = "https://getform.io/f/43acdb57-c0c2-4a72-ae3f-50fbeb248971";
     return (
         <Layout >
             <div className="banner-area">
@@ -89,13 +97,30 @@ export default () => {
             </main>
             {/* End Page Wrapper  */}
 
-            <div className="col-5 offset-1" style={{padding:"10px"}}>
-                <h1 style={{color:"#001c43",textTransform:"uppercase"}}>Contáctanos para llevar tu negocio al #1</h1>
-            </div>
 
 
+            <ContactSectionWrap>
+                <div className="row align-items-center">
+                    <div className="col-2" >
+                        <BannerArea id="contact-form-banner">
+                            <img src={imageData} alt="Contact" />
+                        </BannerArea>
+                    </div>
+                    <div className="col-2 offset-1">
+                        <ContactWrap>
+                            <div className="rn-project-meta-inner">
+                                 <Text >CONTACTANOS</Text>
+                                <Heading>Llevemos a tu negocio al 1º lugar </Heading>
+                            </div>
+                            <ContactFormWrap>
+                                <ContactForm url={form_url} />
+                            </ContactFormWrap>
+                        </ContactWrap>
+                    </div>
+                </div>
+            </ContactSectionWrap>
 
-            <ContactFormSection/>
+
 
 
 

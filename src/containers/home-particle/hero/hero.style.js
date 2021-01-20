@@ -34,6 +34,14 @@ export const ContentWrapper = styled.div `
 
 export const ContetnTop = styled.div `
     margin-top: auto;
+    @media ${device.small}{
+        padding-top: 100px;
+        padding-bottom: 20px;
+        text-size: 10px;
+    }
+    @media ${device.xsmall}{
+        text-size: 15px;
+    }
 `;
 
 export const ContentBottom = styled.div `
@@ -99,7 +107,7 @@ export const ClientWrap = styled.div `
         margin-top: 10px;
     }
     @media ${device.xsmall}{
-        
+        text-size: 15px;
     }
     ${ClientItem}{
         &:not(:last-child){

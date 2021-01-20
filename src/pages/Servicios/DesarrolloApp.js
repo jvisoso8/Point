@@ -7,17 +7,24 @@ import About from "../../containers/company/about";
 import Team from "../../components/team";
 import {AboutSectionWrap, SectionTitle} from "../../containers/company/about/about.stc";
 import Heading from "../../components/shared/heading";
-import {BannerArea} from "../../containers/contact/contact-form/contact-form.stc";
+import {
+    BannerArea,
+    ContactFormWrap,
+    ContactSectionWrap,
+    ContactWrap
+} from "../../containers/contact/contact-form/contact-form.stc";
 import Image from "../../components/image";
 import simple1 from "../../data/servicios/app1.jpg"
 import simple2 from "../../data/servicios/app2.jpg"
 
 import banner from "../../data/servicios/13.jpg"
 import Button from "../../components/shared/button";
-import {Link} from "gatsby";
+import {graphql, Link, useStaticQuery} from "gatsby";
 import ContactFormSection from "../../containers/contact/contact-form";
 import { FiArrowDown} from "react-icons/fi";
 import {ScrollTop} from "../../containers/layout/footer/footer.stc";
+import ContactForm from "../../components/contact-form";
+import Text from "../../components/shared/text";
 
 const scrollHandler = () => {
     let element_to_scroll_to = document.getElementById('#examples');
@@ -26,6 +33,8 @@ const scrollHandler = () => {
 }
 
 export default () => {
+
+    const form_url  = "https://getform.io/f/43acdb57-c0c2-4a72-ae3f-50fbeb248971";
     const [lang, setLang] = useState("eng");
 
     return (
@@ -36,7 +45,7 @@ export default () => {
             <SEO title="DesarrolloApliaciones"/>
             <div className="row">
                 <div className="col-5 offset-1" style={{padding:"10px"}}>
-                    <h1 style={{color:"#001c43",textTransform:"uppercase"}}>Contáctanos</h1>
+                    <h1 style={{color:"#001c43",textTransform:"uppercase"}}>Desarolla tu Aplicación</h1>
 
 
                     <p>
@@ -82,7 +91,7 @@ export default () => {
                             Un buen desarrollo de software inicia con una buena experiencia del usuario
                         </li>
                         <li>
-                            Trabajamos principalmente con iOS, Android, y tecnologías de???
+                            Trabajamos principalmente con iOS y Android
                         </li>
                         <li>
                             Las métricas de análisis y los prototipos son esenciales para validar decisiones
@@ -93,9 +102,22 @@ export default () => {
 
             </div>
 
+            <ContactSectionWrap>
+                <div className="row align-items-center">
+                    <div className="col-2 offset-1">
+                        <ContactWrap>
+                            <div className="rn-project-meta-inner">
+                                <Text ></Text>
+                                <Heading >Tu proyecto inicia aquí:</Heading>
+                            </div>
+                            <ContactFormWrap>
+                                <ContactForm url={form_url} />
+                            </ContactFormWrap>
+                        </ContactWrap>
+                    </div>
+                </div>
+            </ContactSectionWrap>
 
-
-            <ContactFormSection/>
 
 
             <div id="#examples" >

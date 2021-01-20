@@ -1,9 +1,7 @@
 import React, {useState} from "react"
 import Layout from "../../containers/layout/layout";
 import SEO from "../../components/seo";
-import {
-
-    FiCheck,
+import {FiCheck,
 
     FiHome,
     FiUser,
