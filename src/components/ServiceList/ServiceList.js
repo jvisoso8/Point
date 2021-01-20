@@ -24,32 +24,32 @@ const ServiceList = [
         icon: <FiMove />,
         title: 'Análisis de Mercado',
         description: 'We help you reach thousands of potential customers and tell your story in a persuasive, creative and memorable way.',
-        url: "/service-details/SocialMediaMarketing"
+        url: "/Servicios/AnalisisDeMercado"
     },
 
     {
         icon:  <FiCamera />,
         title: 'Fotografía',
         description: ' We give you a whole new layer of insight into your customers, your competitors and your business. Get custom metrics and reports every month and continuously keep a pulse on your business.',
-        url: "/service-details/Analytics"
+        url: "/Servicios/Fotografia"
     },
     {
         icon:  <FiBarChart />,
         title: 'Facebook & Google Analytics',
         description: ' Te brindamos información sobre tus clientes y tu negocio. Obtén métricas e informes personalizados cada mes y mantén un pulso continuo en tu negocio aprovechando el poder de los datos.',
-        url: "//Servicios/FacebookGoogleAnalitics/"
+        url: "/Servicios/FacebookGoogleAnalitics/"
     },
     {
         icon: <FiShoppingCart />,
         title: 'E-Commerce',
         description: 'Llevamos a tu negocio al siguiente nivel abriendo canales de venta completamente nuevos. Vende directo a tus clientes y obtén una mayor utilidad a través de una experiencia perfecta innovadora.',
-        url: "/service-details/ECommerce"
+        url: "/Servicios/ECommerce"
     },
     {
         icon:  <FiUsers />,
         title: 'Marketing',
         description: ' Te ayudamos a alcanzar miles de clientes potenciales y a contar tu historia de manera persuasiva, creativa y memorable.',
-        url: "/service-details/Analytics"
+        url: "/Servicios/Marketing"
     }
 ]
 
