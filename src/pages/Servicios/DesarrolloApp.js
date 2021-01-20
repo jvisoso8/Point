@@ -33,7 +33,7 @@ export default () => {
             <div className="banner-area">
                 <img src={banner} alt="pricing Banner" style={{width:"100%",height:"400px"}}/>
             </div>
-            <SEO title="DesarrolloWeb"/>
+            <SEO title="DesarrolloApliaciones"/>
             <div className="row">
                 <div className="col-5 offset-1" style={{padding:"10px"}}>
                     <h1 style={{color:"#001c43",textTransform:"uppercase"}}>Contáctanos</h1>

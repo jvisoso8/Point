@@ -9,10 +9,10 @@ import {AboutSectionWrap, SectionTitle} from "../../containers/company/about/abo
 import Heading from "../../components/shared/heading";
 import {BannerArea} from "../../containers/contact/contact-form/contact-form.stc";
 import Image from "../../components/image";
-import simple1 from "../../data/servicios/1.jpg"
-import simple2 from "../../data/servicios/2.jpg"
-import simple3 from "../../data/servicios/3.jpg"
-import simple4 from "../../data/servicios/4.jpg"
+import simple1 from "../../data/servicios/28.png"
+import simple2 from "../../data/servicios/29.png"
+import simple3 from "../../data/servicios/30.png"
+import simple4 from "../../data/servicios/31.png"
 import banner from "../../data/servicios/17.jpg"
 import Button from "../../components/shared/button";
 import {Link} from "gatsby";
@@ -34,7 +34,7 @@ export default () => {
             <div className="banner-area">
                 <img src={banner} alt="pricing Banner" style={{width:"100%",height:"400px"}}/>
             </div>
-            <SEO title="DesarrolloWeb"/>
+            <SEO title="Analisis de mercado"/>
             {/* Start Page Wrapper  */}
             <main className="page-wrapper">
                 {/* Start Pricing Tbale Area  */}
@@ -66,7 +66,58 @@ export default () => {
                 </h1>
             </div>
 
+            <div id="#examples">
+                <div style={{color: "#000", padding: "20px", textAlign: "center"}}>
+                    <h1>Ejemplos</h1>
+                </div>
+                <div className="row" style={{backgroundColor: "#15171B"}}>
 
+                    <div className="col-3 vividworknav">
+
+                            <img src={simple1} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+                            <div className="work-text-content" style={{position: "absolute"}}>
+                                <h1>Rango Socio economico</h1>
+                                <h3> Poiniente/Sur CDMX</h3>
+                                <p></p>
+                            </div>
+
+                    </div>
+                    <div target="_blank" className="col-3 vividworknav">
+                        <a href="https://honey-pot-agency.ts.r.appspot.com">
+                            <img src={simple2} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+                            <div className="work-text-content" style={{position: "absolute"}}>
+                                <h1>Robos</h1>
+                                <h3>En zona de locales del cliente</h3>
+                                <p></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="col-3 vividworknav">
+                        <a href="https://joy-city-291022.an.r.appspot.com" target="_blank">
+                            <img src={simple3}
+                                 style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
+                            <div className="work-text-content" style={{position: "absolute"}}>
+                                <h1>Ubicacion de Restaurantes</h1>
+                                <h3>Locales registrados por google</h3>
+                                <p>CDMX</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="col-3 vividworknav">
+                        <a target="_blank" href="https://noicetech.com.au">
+                            <img src={simple4}
+                                 style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
+                            <div className="work-text-content" style={{position: "absolute"}}>
+                                <h1>Restaurantes por precio </h1>
+                                <h3>indexados por google</h3>
+                                <p>CDMX</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
 
             <ContactFormSection/>
 

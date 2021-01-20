@@ -7,36 +7,31 @@
         "featured_work": [
             {
                 "id": "awwards_work",
-                "title": "External",
+                "title": "Servicios",
                 "achivments": [
-                    "Digital Marketing",
-                    "Web development",
-                    "Branding",
-                    "Data Analytics",
+                    "Desarrollo Web",
+                    "Desarrollo de Apps",
+                    "SEO",
+                    "Análisis de Mercado",
                     "E-Commerce",
-                    "App Development"
+                    "Fotografía"
                 ]
             },
             {
                 "id": "csswinner_work",
-                "title": "Internal",
+                "title": "",
                 "achivments": [
-                    "Process Optimisation",
-                    "Process Automation",
-                    "Software Development",
-                    "Data Analysis",
-                    "Data Centralisation",
-                    "IOT",
-                    "SaaS"
+                    "Facebook & Google Analytics",
+                    "Marketing"
+
 
                 ]
             },
             {
                 "id": "themeforest_work",
-                "title": "Consulting",
+                "title": "",
                 "achivments": [
-                    "Technological Audit",
-                    "Technological Advisory"
+
                 ]
             }
         ]

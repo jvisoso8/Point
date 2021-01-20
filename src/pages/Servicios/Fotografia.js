@@ -73,7 +73,7 @@ export default () => {
             <div className="banner-area">
                 <img src={banner} alt="pricing Banner" style={{width:"100%",height:"400px"}}/>
             </div>
-            <SEO title="DesarrolloWeb"/>
+            <SEO title="FOtografia"/>
 
 
 
