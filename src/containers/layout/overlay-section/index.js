@@ -119,7 +119,7 @@ const OverlaySection = ({
                     </OverlaySocial>
                     {postal_code && (
                         <OverlayQuickInfo className="ovl-quick-info rn_surface">
-                            <Heading {...quicInfoHeading}>Quick Information.</Heading>
+                            <Heading {...quicInfoHeading}>INFORMACIÓN RÁPIDA.</Heading>
                             <Text {...quickInfoText}>
                                 <Text {...quickInfoSpan}></Text>
                                 Minerva 72, colonia crédito constructor <br/>

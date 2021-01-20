@@ -4,7 +4,7 @@ import Banner from '../containers/blog/banner'
 import Blog from '../containers/blog/blog-area'
 
 export default () => (
-    <Layout headerStyle={"black-logo"}>
+    <Layout headerStyle="darkHeader">
         <Banner />
         <Blog/>
     </Layout>

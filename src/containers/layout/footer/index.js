@@ -72,7 +72,7 @@ const Footer = ({
 			</FooterTop>
 			<FooterMiddle>
 				<FooterMiddleLeft>
-					<Heading {...headingStyle}>Let’s talk!</Heading>
+					<Heading {...headingStyle}>Queremos conocerte.</Heading>
 					{email && <Text {...emailTextStyle}><Link to="/contact" {...emailLinkStyle}>{email}</Link></Text>}
 				</FooterMiddleLeft>
 				<FooterMiddleRight>

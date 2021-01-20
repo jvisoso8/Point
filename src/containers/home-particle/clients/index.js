@@ -75,7 +75,7 @@ const ClientSection = ({section, lang}) => {
                                 <SectionTitle
                                     title={"Hemos trabajado con empresas de distintos" +
                                     "tamaños y sectores, desde startups hasta grandes empresas de desarrollo inmobiliario. Esto nos ha otorgado la amplitud y" +
-                                    "versatilidad para poder enfrentarnos a diversos problemas complejos. Ofreciendo soluciones tecnológicas a la medida."}
+                                    " versatilidad para poder enfrentarnos a diversos problemas complejos, ofreciendo soluciones tecnológicas a la medida."}
                                     subtitle={"nuestros clientes"}
                                 />
                             </ClientLeft>

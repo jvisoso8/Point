@@ -7,22 +7,17 @@
         "featured_work": [
             {
                 "id": "awwards_work",
-                "title": "Servicios",
+                "title": "",
                 "achivments": [
-                    "Desarrollo Web",
-                    "Desarrollo de Apps",
-                    "SEO",
-                    "Análisis de Mercado",
-                    "E-Commerce",
-                    "Fotografía"
-                ]
+                    ""
+                    ]
+
             },
             {
                 "id": "csswinner_work",
                 "title": "",
                 "achivments": [
-                    "Facebook & Google Analytics",
-                    "Marketing"
+
 
 
                 ]

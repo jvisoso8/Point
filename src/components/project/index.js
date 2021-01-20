@@ -44,13 +44,13 @@ const Project = ({image, id, title, client, sector, isEven, ...restProps}) => {
                 <div className="content row">
                     {title && (
                         <ProjectType className="wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
-                            <Heading {...HeadingStyle}>PROJECT NAME</Heading>
+                            <Heading {...HeadingStyle}>PROYECTO</Heading>
                             <Text {...TextStyle}>{title}</Text>
                         </ProjectType>
                     )}
                     {client && (
                         <ProjectType className="wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
-                            <Heading {...HeadingStyle}>CLIENT</Heading>
+                            <Heading {...HeadingStyle}>CLIENTE</Heading>
                             <Text {...TextStyle}>{client}</Text>
                         </ProjectType>
                     )}
