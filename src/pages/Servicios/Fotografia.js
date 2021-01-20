@@ -31,10 +31,20 @@ import simple20 from "../../data/servicios/fotos/20.jpg"
 import simple21 from "../../data/servicios/fotos/21.jpg"
 
 
-import banner from "../../data/servicios/23.jpg"
+import banner from "../../data/servicios/32.jpeg"
 
 import ContactFormSection from "../../containers/contact/contact-form";
 import {ScrollTop} from "../../containers/layout/footer/footer.stc";
+import {
+    BannerArea,
+    ContactFormWrap,
+    ContactSectionWrap,
+    ContactWrap
+} from "../../containers/contact/contact-form/contact-form.stc";
+import imageData from "../../data/servicios/34.jpg";
+import Text from "../../components/shared/text";
+import Heading from "../../components/shared/heading";
+import ContactForm from "../../components/contact-form";
 
 
 
@@ -66,16 +76,28 @@ const ServiceList = [
 export default () => {
     const [lang, setLang] = useState("eng");
     const column="col-lg-4 col-md-6 col-sm-6 col-12 text-left";
+    const form_url  = "https://getform.io/f/43acdb57-c0c2-4a72-ae3f-50fbeb248971";
     return (
         <Layout >
             <div className="banner-area">
                 <img src={banner} alt="pricing Banner" style={{width:"100%",height:"400px"}}/>
             </div>
-            <SEO title="FOtografia"/>
+            <SEO title="Fotografia"/>
 
+            <div className="container" style={{padding:"50px"}}>
+                <div className="row">
+                    <div className="col-4">
+                        <h1 style={{color:"#001c43",textTransform:"uppercase"}}>NORMAL VS LIFESYLE</h1>
+                        <p>La fotografía normal presenta tu producto de una manera clara para el cliente con un fondo de color predeterminado.
+                            La fotografía lifestyle cuenta una historia en una imagen y
+                            utiliza una varedad de artículos y lugares para darle vida a tu producto.
+                        </p>
 
+                    </div>
+                </div>
+            </div>
 
-        <div className="container">
+            <div className="container">
             <div className="row" >
                 {ServiceList.map( (val , i) => (
                     <div className={`${column}`} key={i}>
@@ -99,47 +121,22 @@ export default () => {
             </div>
         </div>
             {/* Start Page Wrapper  */}
-            <div className="container" style={{padding:"20px"}}>
-                <div className="row">
-                    <div className="col-3 offset-1">
-                        <h1 style={{color:"#001c43",textTransform:"uppercase"}}>Normal vs lifesyle</h1>
-                        <p>La fotografia normal presenta tu producto de una manera clara para el cliente,
-                            pero la fotografia lifesyle cuenta una historia en una imagen.</p>
-                        <p>Los paquetes mostrados son los mas sensillos si se busca algo mas grande se pueden hacer algo a la medida de su negoccio</p>
-                    </div>
-                </div>
-            </div>
 
-            <div id="#Productos" >
-                <div style={{color:"#000", padding:"20px", textAlign:"center"}} >
+
+
+
+            <main className="page-wrapper" id="#Productos">
+                <div className="container" style={{color:"#000", paddingLeft:"50px",paddingTop:"50px", textAlign:"left"}} >
                     <h1>Productos</h1>
+                    <h4>Permite a tus clientes observar en mayor detalle cómo es el producto que quieren comprar y optimiza su experiencia digital.</h4>
                 </div>
-                <div className="row" style={{backgroundColor: "#15171B"}} >
-
-                    <div className="col-2 ">
-                        <img src={simple1} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
-                        <img src={simple9} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
-                    </div>
-                    <div target="_blank" className="col-2 ">
-                        <img src={simple2} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
-                        <img src={simple4} style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
-                        <img src={simple5} style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
-                    </div>
-                    <div className="col-2 ">
-                        <img src={simple8} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
-                        <img src={simple11} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
-                    </div>
-                </div>
-            </div>
-
-            <main className="page-wrapper">
                 {/* Start Pricing Tbale Area  */}
                 <div className="rn-pricing-table-area ptb--120 bg_color--5">
                     <div className="container">
                         <div className="row">
                             {/* Start PRicing Table Area  */}
                             <div className="col-lg-4 col-md-6 col-12" style={{marginBottom: "20px"}}>
-                                <div className="rn-pricing active">
+                                <div className="rn-pricing ">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
                                             <h4 className="title">Normales</h4>
@@ -170,7 +167,7 @@ export default () => {
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">lifestyle</h4>
+                                            <h4 className="title">Lifestyle</h4>
                                             <div className="pricing">
                                                 <span className="price">4,000</span>
                                                 <span className="subtitle">MXN </span>
@@ -206,40 +203,40 @@ export default () => {
 
                 {/* End Pricing Tbale Area  */}
 
-            </main>
-            {/* End Page Wrapper  */}
+            </main >
+            <div  >
 
-            <div id="#Lugar" >
-                <div style={{color:"#000", padding:"20px", textAlign:"center"}} >
-                    <h1>Lugar</h1>
-                </div>
                 <div className="row" style={{backgroundColor: "#15171B"}} >
 
                     <div className="col-2 ">
-                        <img src={simple14} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+                        <img src={simple1} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+                        <img src={simple9} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
                     </div>
                     <div target="_blank" className="col-2 ">
-
-                        <img src={simple12} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
-                        <img src={simple13} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
-
-
+                        <img src={simple2} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+                        <img src={simple4} style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
+                        <img src={simple5} style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
                     </div>
                     <div className="col-2 ">
-
-                        <img src={simple16} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+                        <img src={simple8} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+                        <img src={simple11} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
                     </div>
                 </div>
             </div>
 
-            <main className="page-wrapper">
+            <main id="#Lugar" className="page-wrapper">
                 {/* Start Pricing Tbale Area  */}
+                <div className="container" style={{color:"#000", paddingLeft:"50px",paddingTop:"50px", textAlign:"left"}} >
+                    <h1>Lugar</h1>
+                    <h4>Cuenta tu historia del modo más llamativo y creativo al reflejar los detalles y características de tu espacio a través de diferentes ángulos.</h4>
+                </div>
+
                 <div className="rn-pricing-table-area ptb--120 bg_color--5">
                     <div className="container">
                         <div className="row">
                             {/* Start PRicing Table Area  */}
                             <div className="col-lg-4 col-md-6 col-12" style={{marginBottom: "20px"}}>
-                                <div className="rn-pricing active">
+                                <div className="rn-pricing ">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
                                             <h4 className="title">Normales</h4>
@@ -269,9 +266,9 @@ export default () => {
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">lifestyle</h4>
+                                            <h4 className="title">Lifestyle</h4>
                                             <div className="pricing">
-                                                <span className="price">variable</span>
+                                                <span className="price" style={{textSize:"40px"}}>variable</span>
                                                 <span className="subtitle">MXN </span>
                                             </div>
                                         </div>
@@ -307,39 +304,44 @@ export default () => {
                 {/* End Pricing Tbale Area  */}
 
             </main>
-            {/* End Page Wrapper  */}
 
-            <div id="#Personas" >
-                <div style={{color:"#000", padding:"20px", textAlign:"center"}} >
-                    <h1>Personas</h1>
-                </div>
+            <div  >
+
                 <div className="row" style={{backgroundColor: "#15171B"}} >
 
                     <div className="col-2 ">
-
-                        <img src={simple20} style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
+                        <img src={simple14} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
                     </div>
                     <div target="_blank" className="col-2 ">
-                        <img src={simple19} style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
-                        <img src={simple18} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+
+                        <img src={simple12} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+                        <img src={simple13} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
 
 
                     </div>
                     <div className="col-2 ">
-                        <img src={simple21} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
 
+                        <img src={simple16} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
                     </div>
                 </div>
             </div>
 
-            <main className="page-wrapper">
+
+            {/* End Page Wrapper  */}
+            <main id="#Personas" className="page-wrapper">
+                <div className="container" style={{color:"#000", paddingLeft:"50px",paddingTop:"50px", textAlign:"left"}} >
+                    <h1>Personas</h1>
+                    <h4>Cuenta tu historia del modo más llamativo y creativo al reflejar los detalles
+                        y característicaTransmite el mensaje adecuado con la imagen adecuada.
+                        Permite que tus imágenes sobresalgan y muestra al mundo tu singularidad.</h4>
+                </div>
                 {/* Start Pricing Tbale Area  */}
                 <div className="rn-pricing-table-area ptb--120 bg_color--5">
                     <div className="container">
                         <div className="row">
                             {/* Start PRicing Table Area  */}
                             <div className="col-lg-4 col-md-6 col-12" style={{marginBottom: "20px"}}>
-                                <div className="rn-pricing active">
+                                <div className="rn-pricing ">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
                                             <h4 className="title">Normales</h4>
@@ -367,7 +369,7 @@ export default () => {
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">lifestyle</h4>
+                                            <h4 className="title">Lifestyle</h4>
                                             <div className="pricing">
                                                 <span className="price">3,000</span>
                                                 <span className="subtitle">MXN </span>
@@ -404,10 +406,51 @@ export default () => {
                 {/* End Pricing Tbale Area  */}
 
             </main>
+            <div>
+
+                <div className="row" style={{backgroundColor: "#15171B"}} >
+
+                    <div className="col-2 ">
+
+                        <img src={simple20} style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
+                    </div>
+                    <div target="_blank" className="col-2 ">
+                        <img src={simple19} style={{paddingLeft: "50px", paddingTop: "50px", paddingBottom: "50px"}}/>
+                        <img src={simple18} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+
+
+                    </div>
+                    <div className="col-2 ">
+                        <img src={simple21} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
+
+                    </div>
+                </div>
+            </div>
+
+
             {/* End Page Wrapper  */}
 
 
-            <ContactFormSection/>
+            <ContactSectionWrap>
+                <div className="row align-items-center">
+                    <div className="col-2" >
+                        <BannerArea id="contact-form-banner">
+                            <img src={imageData} alt="Contact" />
+                        </BannerArea>
+                    </div>
+                    <div className="col-2 offset-1">
+                        <ContactWrap>
+                            <div className="rn-project-meta-inner">
+                                <Text >CONTACTANOS</Text>
+                                <Heading>Permítenos capturar el momento y cuenta tu historia.</Heading>
+                            </div>
+                            <ContactFormWrap>
+                                <ContactForm url={form_url} />
+                            </ContactFormWrap>
+                        </ContactWrap>
+                    </div>
+                </div>
+            </ContactSectionWrap>
 
             <main className="page-wrapper">
                 {/* Start Pricing Tbale Area  */}
@@ -468,10 +511,10 @@ export default () => {
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">Ligares fuera de la CDMX</h4>
+                                            <h4 className="title">Lugares fuera de la CDMX</h4>
                                             <div className="pricing">
-                                                <span className="price">Viaticos</span>
-                                                <span className="subtitle"></span>
+                                                <span className="price">Viáticos</span>
+                                                <span className="subtitle">a cuenta del cliente</span>
                                             </div>
                                         </div>
                                         <div className="pricing-body">
@@ -485,6 +528,7 @@ export default () => {
                                     </div>
                                 </div>
                             </div>
+                            <p>Para un proyecto más ambicioso, contacta a un ejecutivo</p>
 
                         </div>
 
