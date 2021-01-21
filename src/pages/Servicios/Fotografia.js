@@ -331,8 +331,7 @@ export default () => {
             <main id="#Personas" className="page-wrapper">
                 <div className="container" style={{color:"#000", paddingLeft:"50px",paddingTop:"50px", textAlign:"left"}} >
                     <h1>Personas</h1>
-                    <h4>Cuenta tu historia del modo más llamativo y creativo al reflejar los detalles
-                        y característicaTransmite el mensaje adecuado con la imagen adecuada.
+                    <h4>Transmite el mensaje adecuado con la imagen adecuada.
                         Permite que tus imágenes sobresalgan y muestra al mundo tu singularidad.</h4>
                 </div>
                 {/* Start Pricing Tbale Area  */}
