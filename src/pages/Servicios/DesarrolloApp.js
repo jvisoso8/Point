@@ -125,7 +125,7 @@ export default () => {
                     <h1>NUESTRO PORTAFOLIO</h1>
                 </div>
                 <div className="row" style={{backgroundColor: "#15171B"}} >
-
+                    {/*
                     <div className="col-3 vividworknav">
 
                             <img src={simple1} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
@@ -136,6 +136,7 @@ export default () => {
                             </div>
 
                     </div>
+                    */}
                     <div target="_blank" className="col-3 vividworknav">
 
                             <img src={simple2} style={{paddingLeft: "50px", paddingTop: "50px"}}/>
