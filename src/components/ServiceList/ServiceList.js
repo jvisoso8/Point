@@ -23,7 +23,7 @@ const ServiceList = [
     {
         icon: <FiMove />,
         title: 'Análisis de Mercado',
-        description: 'Te ayudamos a tomar las mejores desiciones de negocios atraves de analisis de datos',
+        description: 'Te ayudamos a tomar las mejores decisiones de negocios a través de análisis de datos',
         url: "/Servicios/AnalisisDeMercado"
     },
 
